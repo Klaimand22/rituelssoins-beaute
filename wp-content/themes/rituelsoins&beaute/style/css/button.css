@@ -10,6 +10,7 @@
   border-radius: 100px;
   margin-left: 2rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .button-header:hover {
   background-color: #ebebeb;
@@ -33,6 +34,7 @@
   text-decoration: none;
   /* mettre en majusucule */
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
 }
 .button:hover {
   background-color: #ebebeb;
@@ -43,6 +45,7 @@
   background-color: var(--color-green-2) !important;
   color: #f9f3f2 !important;
   padding: 1rem 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .button-green:hover {
@@ -62,6 +65,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .button-pink:hover {
