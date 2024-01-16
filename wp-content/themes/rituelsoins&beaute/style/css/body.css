@@ -6,7 +6,7 @@
   --color-pink-1: #daa7a1;
   --color-text-green: #293124;
   --color-black: #000;
-  --color-senary: #333;
+  --color-white: #f9f3f2;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-text-green);
+  background-color: var(--color-white);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -25,6 +26,17 @@ body {
   font-family: "Bollent" !important;
   font-size: 4rem;
   text-transform: uppercase;
+  color: var(--color-text-green);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subtitle-page {
+  font-family: "Montserrat" !important;
+  font-size: 1rem;
+
   color: var(--color-text-green);
   margin: 0;
   padding: 0;

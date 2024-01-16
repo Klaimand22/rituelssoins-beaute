@@ -106,4 +106,61 @@
   color: var(--color-text-green);
 }
 
+.epilation-card-container {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  gap: 5rem;
+  border-radius: 46px;
+}
+.epilation-card-container .epilation-card-item {
+  width: 50%;
+  background-color: var(--color-green-1);
+  border-radius: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.epilation-card-container .epilation-card-item .icone {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.epilation-card-container .epilation-card-item .icone .border {
+  border: 1px solid black;
+  width: 120px;
+  height: -37px;
+}
+.epilation-card-container .epilation-card-item .icone img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.epilation-card-container .epilation-card-item .text {
+  position: relative;
+  width: 70%;
+  gap: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.epilation-card-container .epilation-card-item .text p {
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  color: var(--color-text-green);
+  text-align: center;
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=page-epilation.css.map */

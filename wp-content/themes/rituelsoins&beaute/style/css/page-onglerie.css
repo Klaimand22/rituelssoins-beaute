@@ -1,0 +1,63 @@
+/** @format */
+.onglerie-page h2 {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  color: var(--color-text-green);
+}
+
+.container-onglerie {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.container-onglerie .container-onglerie-text {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 46px;
+  border: 1px solid var(--color-text-green);
+}
+.container-onglerie .container-onglerie-text .text-onglerie {
+  font-family: "Bollent";
+  font-size: 2rem;
+  color: var(--color-text-green);
+}
+.container-onglerie .container-onglerie-text .list-onglerie {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.container-onglerie .container-onglerie-text .list-onglerie li {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  color: var(--color-text-green);
+}
+.container-onglerie .container-onglerie-img {
+  width: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 46px;
+  border: 1px solid red;
+}
+.container-onglerie .container-onglerie-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=page-onglerie.css.map */

@@ -1,0 +1,206 @@
+{
+    "key": "group_65a678081777e",
+    "title": "epilation",
+    "fields": [
+        {
+            "key": "field_65a67808f73f3",
+            "label": "Icone 1 Carte Présentation",
+            "name": "epilation-card-1-icone",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "return_format": "array",
+            "acfe_thumbnail": 0,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_65a678abf73f4",
+            "label": "Icone 1 Carte Présentation",
+            "name": "epilation-card-2-icone",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "return_format": "array",
+            "acfe_thumbnail": 0,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_65a67908f73f5",
+            "label": "Paragraphe 1 Carte 1",
+            "name": "epilation-card-1-description1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Pour les épilations sourcils, lèvre, aisselles et maillot nous proposons une cire traditionnelle à l’azulène, respectant ainsi les peaux sensibles tout en laissant une peau douce. ",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65a67929f73f6",
+            "label": "Paragraphe 2 Carte 1",
+            "name": "epilation-card-1-description2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Cette cire de qualité est composée principalement d’ingrédients naturels et respectueux de la peau.  Ses propriétés apaisantes et anti-inflammatoires permettent ainsi de réduire les rougeurs. ",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65a6793ef73f7",
+            "label": "Paragraphe 3 Carte 1",
+            "name": "epilation-card-1-description3",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Pour les jambes et les bras, nous utilisons une cire à bande également à l’azulène.",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65a6795ef73f8",
+            "label": "Paragraphe 1 Carte 2",
+            "name": "epilation-card-2-description1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Enfin, nous vous proposons également l’épilation au fil, pour les sourcils et la lèvre. Pour celle-ci, nous utilisons un fil antiseptique traditionnel d’Inde.",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65a6798df73f9",
+            "label": "Paragraphe 2 Carte 2",
+            "name": "epilation-card-2-description2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Cette méthode est moins douloureuse et s’adapte à tous les types de peaux en prenant soin de l’épiderme.",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65a679a3f73fa",
+            "label": "Paragraphe 3 Carte 2",
+            "name": "epilation-card-2-description3",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Efficace et précise, elle ne laisse pas de traces de son passage (rougeurs, boutons etc).",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-epilation.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1705408993
+}
