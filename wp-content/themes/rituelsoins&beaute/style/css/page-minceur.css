@@ -1,0 +1,229 @@
+/** @format */
+.minceur-info {
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  padding: 2rem 0;
+  background-color: var(--color-green-1);
+  border-radius: 48px;
+}
+.minceur-info .minceur-info-item:nth-child(2) {
+  border-left: 1px solid var(--color-black);
+  border-right: 1px solid var(--color-black);
+}
+.minceur-info .minceur-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  max-width: 15rem;
+}
+.minceur-info .minceur-info-item .minceur-info-img img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.minceur-info .minceur-info-item .minceur-info-text {
+  text-align: left;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.minceur-info .minceur-info-item .minceur-info-text p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.keyword-container {
+  margin: 2rem 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.keyword {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.keyword li {
+  font-family: "Bollent", sans-serif;
+  font-size: 1.8rem;
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.minceur-stuff-container .minceur-stuff-price::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  border-radius: 49% 49% 2% 2%/40% 40% 2% 2%;
+  border: 1px solid black;
+}
+
+.minceur-stuff-container {
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+}
+.minceur-stuff-container .image-background {
+  width: auto;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.minceur-stuff-container .minceur-stuff-price {
+  width: 21.25rem;
+  min-height: 25rem;
+  z-index: 2;
+  position: absolute;
+  background-color: var(--color-green-1);
+  border-radius: 49% 49% 2% 2%/40% 40% 2% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 0;
+  margin-top: 15rem;
+}
+.minceur-stuff-container .minceur-stuff-price img {
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  margin-bottom: 5rem;
+  border-radius: 50%;
+}
+.minceur-stuff-container .minceur-stuff-price-text {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-black);
+  padding: 0.5rem 0;
+  margin-bottom: 19px;
+}
+
+.minceur-seance-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 3rem;
+}
+.minceur-seance-container .minceur-seance-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.minceur-seance-container .minceur-seance-text .minceur-seance-text-border {
+  border: 1px solid var(--color-green-1);
+  border-radius: 46px;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 1vw 0;
+}
+.minceur-seance-container .minceur-seance-text .minceur-seance-text-border h2 {
+  font-family: "Bollent", sans-serif;
+  font-size: 2.5rem;
+  color: var(--color-text-green);
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+.minceur-seance-container .minceur-seance-text .minceur-seance-text-border p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: var(--color-text-green);
+  margin-bottom: 1vw;
+  margin-left: 3vw;
+  padding: 10px;
+  line-height: 1.5rem;
+}
+.minceur-seance-container .minceur-seance-img {
+  height: auto;
+  /*     border-radius: 46px; */
+  border: 1px solid var(--color-green-1);
+}
+.minceur-seance-container .minceur-seance-img img {
+  width: auto;
+  height: auto;
+  border-radius: 46px;
+}
+
+.minceur-advice {
+  background-color: var(--color-green-1);
+  width: 60%;
+  height: auto;
+  padding: 1rem 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  border-radius: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.minceur-advice h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: black;
+}
+.minceur-advice img {
+  width: 84px;
+  height: 84px;
+}
+
+.minceur-video {
+  background-color: rgba(255, 0, 0, 0.438);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  gap: 2rem;
+}
+
+/*# sourceMappingURL=page-minceur.css.map */

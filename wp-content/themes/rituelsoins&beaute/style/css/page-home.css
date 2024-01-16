@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/** @format */
+/** @format */
+@font-face {
+  font-family: "Bollent";
+  src: url("../fonts/Bollent.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Moretimes";
+  src: url("../fonts/moretimes.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.container-background {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-background .background-logo {
+  width: auto;
+  height: 30%;
+  object-fit: cover;
+  z-index: 10;
+  position: absolute;
+}
+.container-background .background-image {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  object-fit: fill;
+}
+
+.discover {
+  background-color: var(--color-green-2);
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.discover p .about {
+  font-size: 0.8rem;
+  color: var(--color-text-green);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.discover h2 {
+  font-size: 1rem;
+  color: var(--color-text-green);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0.5rem 0;
+  font-weight: 0;
+}
+.discover h1 {
+  color: var(--color-text-green);
+  font-family: "Bollent";
+  font-size: 4rem;
+  /* majuscule */
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+
+.services {
+  width: 100%;
+  height: 40vh;
+}
+.services .services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 15vh 0;
+}
+.services .services-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  height: 20vh;
+}
+.services .services-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  position: relative;
+}
+.services .services-item h3 {
+  font-size: 1.3rem;
+  color: var(--color-text-green);
+  font-family: "Montserrat", "regular";
+  text-align: center;
+  margin: 0.5rem 0;
+  font-weight: 0;
+}
+
+.services-grid {
+  width: 100%;
+}
+.services-grid .services-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin: 15vh 0;
+}
+.services-grid .services-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.services-grid .services-grid-item .services-grid-img {
+  position: relative;
+  width: 32rem;
+  height: 32rem;
+  overflow: hidden;
+  border-radius: 8px;
+  z-index: 1;
+}
+.services-grid .services-grid-item .services-grid-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  transition: transform 0.3s ease; /* Ajoute une transition au survol */
+}
+.services-grid .services-grid-item .services-grid-hover {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+  width: 30rem;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  bottom: 0;
+  background-color: var(--color-green-1);
+  border-radius: 8px;
+}
+.services-grid .services-grid-item .services-grid-hover h3 {
+  font-size: 1.3rem;
+  color: var(--color-text-green);
+  font-family: "Montserrat", "regular";
+  text-align: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  font-weight: 0;
+  background-color: var(--color-green-1);
+  cursor: pointer;
+}
+.services-grid .services-grid-item .services-grid-hover h3:hover + .services-grid-hover {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+.services-grid .services-grid-item .services-grid-hover h3:hover + .services-grid-hover p, .services-grid .services-grid-item .services-grid-hover h3:hover + .services-grid-hover a {
+  display: block;
+  transition: 0.5s;
+}
+.services-grid .services-grid-item .services-grid-hover p, .services-grid .services-grid-item .services-grid-hover a {
+  font-size: 1rem;
+  color: var(--color-text-green);
+  font-family: "Montserrat", "regular";
+  text-align: start;
+  margin: 0.5rem 0;
+  font-weight: 0;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Ajoute une transition à l'opacité */
+}
+.services-grid .services-grid-item:hover .services-grid-hover {
+  opacity: 1;
+}
+.services-grid .services-grid-item:hover .services-grid-hover p, .services-grid .services-grid-item:hover .services-grid-hover a {
+  display: block;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=page-home.css.map */

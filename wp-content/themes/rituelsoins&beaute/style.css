@@ -1,0 +1,14 @@
+/** @format */
+/* ------------------------------------------------------------COMPOSANT ---------------------------------------------------------*/
+@import "./style/css/fonts.css";
+@import "./style/css/body.css";
+@import "./style/css/header.css";
+@import "./style/css/reset.css";
+@import "./style/css/footer.css";
+@import "./style/css/button.css";
+
+/* ------------------------------------------------------------PAGE ---------------------------------------------------------*/
+
+@import "./style/css/page-home.css";
+@import "./style/css/page-minceur.css";
+@import "./style/css/page-epilation.css";

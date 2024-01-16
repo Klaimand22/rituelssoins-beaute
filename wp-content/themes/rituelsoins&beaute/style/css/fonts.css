@@ -1,0 +1,15 @@
+/** @format */
+
+@font-face {
+  font-family: "Bollent";
+  src: url("../../fonts/Bollent.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Moretimes";
+  src: url("../../fonts/moretimes.ttf");
+  font-weight: normal;
+  font-style: normal;
+}

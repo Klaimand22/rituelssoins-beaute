@@ -1,0 +1,67 @@
+/** @format */
+
+/* ------------------------------------------------------------BUTTON HEADER --------------------------------------------------------- */
+
+.button-header {
+  background-color: var(--color-pink-1);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.button-header:hover {
+  background-color: #ebebeb;
+  color: #000;
+}
+
+/* ------------------------------------------------------------BUTTON CLASSIQUE --------------------------------------------------------- */
+.button {
+  background-color: orange;
+  color: #fff;
+  border: none;
+
+  border-radius: 100px;
+  margin: 2rem;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  /* mettre en majusucule */
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: #ebebeb;
+  color: #000;
+}
+
+.button-green {
+  background-color: var(--color-green-1) !important;
+  color: #000000 !important;
+  padding: 1rem 1rem;
+}
+
+.button-green:hover {
+  background-color: #ebebeb !important;
+  color: #000 !important;
+}
+
+.button-pink {
+  background-color: var(--color-pink-1) !important;
+  color: #ffffff !important;
+  width: 340px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.button-pink:hover {
+  background-color: #ebebeb !important;
+  color: #000 !important;
+}

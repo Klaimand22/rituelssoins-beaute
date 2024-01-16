@@ -1,0 +1,33 @@
+/** @format */
+/* Declaration Couleur */
+:root {
+  --color-green-1: #cdd6c8;
+  --color-green-2: #9b9c86;
+  --color-pink-1: #daa7a1;
+  --color-text-green: #293124;
+  --color-black: #000;
+  --color-senary: #333;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-green);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.title-page {
+  font-family: "Bollent" !important;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--color-text-green);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}

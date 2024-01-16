@@ -1,0 +1,109 @@
+/** @format */
+.epilation-price .cire-price::after,
+.fil-price::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  border-radius: 49% 49% 2% 2%/40% 40% 2% 2%;
+  border: 1px solid #9b9c86;
+  margin: 10px;
+}
+
+.epilation-price {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.epilation-price .cire-price {
+  width: 21.25rem;
+  min-height: 25rem;
+  position: relative;
+  background-color: #cdd6c8;
+  border-radius: 49% 49% 2% 2%/40% 40% 2% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 0;
+}
+.epilation-price .cire-price img {
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  margin-bottom: 5rem;
+  border-radius: 50%;
+}
+.epilation-price .fil-price {
+  width: 18rem;
+  min-height: 18rem;
+  position: relative;
+  background-color: var(--color-green-1);
+  border-radius: 49% 49% 2% 2%/40% 40% 2% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 0;
+}
+.epilation-price .fil-price img {
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  margin-bottom: 5rem;
+  border-radius: 50%;
+}
+
+.epilation-banner {
+  width: 100%;
+  background-color: var(--color-green-1);
+  margin-top: 3rem;
+}
+.epilation-banner img {
+  width: 50%;
+  height: 340px;
+  object-fit: cover;
+  filter: blur(2px);
+}
+
+.forfait-container {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.forfait-container .forfait-container-border {
+  border: 1px solid #cdd6c8;
+  border-radius: 48px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5rem;
+  padding: 5rem 0;
+}
+.forfait-container .forfait-container-border h2 {
+  padding-left: 3rem;
+  font-family: "Bollent";
+  font-size: 3rem;
+  color: var(--color-text-green);
+}
+.forfait-container .forfait-container-border p {
+  padding-left: 5rem;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  color: var(--color-text-green);
+}
+
+/*# sourceMappingURL=page-epilation.css.map */
