@@ -131,42 +131,49 @@ h3.supplement {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 
   .left {
-    width: 50%;
-    height: 100%;
+    height: auto;
+    width: 52%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    border-radius: 46px;
-    border: 1px solid var(--color-text-green);
 
     img {
-      width: 50%;
-      height: auto;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
+      /* position: absolute; */
+      border-radius: 46px;
     }
   }
   .right {
     display: flex;
+    flex: 1;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     border: 1px solid blue;
     width: auto;
+    gap: 2rem;
+
     .price {
       border: 1px solid var(--color-text-green);
-      width: 40%;
-      padding: 1rem;
+      width: 73%;
+      padding: 10px;
+      border-radius: 50px;
+      left: 50%;
+      transform: translateX(10%);
       p {
         text-align: center;
         font-family: "Montserrat";
         font-size: 1rem;
         color: var(--color-text-green);
-        padding: 2rem;
+        margin: 1rem;
       }
 
       h3 {
@@ -174,20 +181,19 @@ h3.supplement {
         font-size: 2rem;
         color: var(--color-text-green);
         text-align: center;
+        margin: 10px;
       }
     }
 
     .description {
-      border: 1px solid var(--color-text-green);
       background-color: var(--color-green-1);
-      width: 40%;
+      width: 70%;
       padding: 2rem;
-      border-radius: 0% 8% 8% 25% / 25% 8% 8% 0%;
+      border-radius: 0% 50px 50px 0%/0% 50px 50px 0%;
       p {
         font-family: "Montserrat";
         font-size: 1rem;
         color: var(--color-text-green);
-        padding: 2rem;
       }
     }
   }

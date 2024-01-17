@@ -1,0 +1,97 @@
+/** @format */
+
+.gift-banner .description::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 20px;
+  border-radius: 49% 49% 2% 2%/40% 40% 2% 2%;
+  border: 1px solid black;
+  padding: 1rem 1rem;
+}
+.gift-banner {
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: var(--color-green-1);
+
+  .banner {
+    width: 100%;
+    height: 500px;
+  }
+  .banner img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+  }
+  .description {
+    width: 21.25rem;
+    min-height: 25rem;
+    z-index: 2;
+    position: absolute;
+    background-color: var(--color-green-1);
+    border-radius: 49% 49% 2% 2%/40% 40% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem 0;
+    margin-top: 20rem;
+
+    .title {
+      font-size: 1rem;
+      font-family: "Montserrat", sans-serif;
+      color: var(--color-black);
+      text-align: center;
+      margin-bottom: 1rem;
+      width: 80%;
+    }
+    .text {
+      font-size: 1rem;
+      font-family: "Montserrat", sans-serif;
+      color: var(--color-black);
+      text-align: center;
+      margin-bottom: 1rem;
+      width: 80%;
+    }
+
+    img {
+      width: 5rem;
+      height: 5rem;
+      background-color: white;
+      margin-bottom: 5rem;
+      border-radius: 50%;
+    }
+  }
+
+  .minceur-stuff-price-text {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-black);
+    padding: 0.5rem 0;
+    margin-bottom: 19px;
+  }
+}
+
+.info-gift {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}

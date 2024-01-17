@@ -8,69 +8,28 @@ get_header();
 <h2 class="subtitle-page">Une parenthèse de détente, de douceur et de bien-être. </h2>
 
 
+<?php foreach (get_field('prices') as $i => $soin) :
 
-<div class="spreadsheet">
+    // make alternate css class for spreadsheet if modulo 2 == 0
+    $class = ($i % 2 == 0) ? 'spreadsheet-even' : 'spreadsheet-odd';
+
+?>
+<div class="spreadsheet <?php echo $class; ?>">
     <div class="details">
-        <h3>Rituel coup d'état</h3>
-        <p> Offrez-vous un nouvel éclat à votre peau grâce à ce soin visage composé des étapes essentielle
-        </p>
+        <h3><?php echo $soin['title']; ?></h3>
+        <p><?php echo $soin['description']; ?></p>
     </div>
     <div class="price">
-        <div class="duration">
-            <p>45 min</p>
-        </div>
+
         <div class="service-price">
-            <p>55€</p>
+            <div class="duration">
+                <p><?php echo $soin['duration']; ?></p>
+            </div>
+            <p><?php echo $soin['price']; ?></p>
         </div>
     </div>
 </div>
-<div class="spreadsheet">
-    <div class="details">
-        <h3>Rituel coup d'état</h3>
-        <p> Offrez-vous un nouffrez-vous un nouvel éclat à votre peau grâce à ce soin visage composé des étapes
-            essentielleffrez-vous un nouvel éclat à votre peau grâce à ce soin visage composé des étapes essentiellevel
-            éclat à votre peau grâce à ce soin visage composé des étapes essentielle
-        </p>
-    </div>
-    <div class="price">
-        <div class="duration">
-            <p>45 min</p>
-        </div>
-        <div class="service-price">
-            <p>55€</p>
-        </div>
-    </div>
-</div>
-<div class="spreadsheet">
-    <div class="details">
-        <h3>Rituel coup d'état</h3>
-        <p> Offrez-vous un nouvel éclat à votre peau grâce à ce soin visage composé des étapes essentielle
-        </p>
-    </div>
-    <div class="price">
-        <div class="duration">
-            <p>45 min</p>
-        </div>
-        <div class="service-price">
-            <p>55€</p>
-        </div>
-    </div>
-</div>
-<div class="spreadsheet">
-    <div class="details">
-        <h3>Rituel coup d'état</h3>
-        <p> Offrez-vous un nouvel éclat à votre peau grâce à ce soin visage composé des étapes essentielle
-        </p>
-    </div>
-    <div class="price">
-        <div class="duration">
-            <p>45 min</p>
-        </div>
-        <div class="service-price">
-            <p>55€</p>
-        </div>
-    </div>
-</div>
+<?php endforeach; ?>
 
 
 <div class="soins-visage-bouton">

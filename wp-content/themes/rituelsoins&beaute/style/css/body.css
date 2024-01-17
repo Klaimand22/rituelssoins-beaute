@@ -30,16 +30,68 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  margin-top: 5rem;
   margin-bottom: 2rem;
 }
 
 .subtitle-page {
   font-family: "Montserrat" !important;
   font-size: 1rem;
-
   color: var(--color-text-green);
   margin: 0;
   padding: 0;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.center-text {
+  width: 100%;
+  text-align: center;
+}
+.left-text {
+  width: 60%;
+  text-align: left;
+}
+
+.right-text {
+  width: 100%;
+  text-align: right;
+}
+
+.right-text h3 {
+  font-family: "Bollent" !important;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--color-text-green);
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.left-text h3 {
+  font-family: "Bollent" !important;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--color-text-green);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.left-text p {
+  font-family: "Montserrat" !important;
+  font-size: 1rem;
+  color: var(--color-text-green);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 2rem;
+  width: 70%;
+}
+
+.border-solid {
+  border: 1px solid var(--color-text-green);
 }

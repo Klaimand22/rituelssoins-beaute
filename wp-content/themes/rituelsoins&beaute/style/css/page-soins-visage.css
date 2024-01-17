@@ -25,7 +25,7 @@
 }
 .spreadsheet .price {
   display: flex;
-  justify-content: end;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   width: 50%;
@@ -37,7 +37,7 @@
   z-index: 10;
   position: absolute;
   top: -1.5rem;
-  right: calc(30% - 5rem);
+  left: calc(30% - 5rem);
 }
 .spreadsheet .price .duration p {
   font-size: 1.3rem;
@@ -49,6 +49,7 @@
   border: 1px solid var(--color-green-2);
   padding: 1rem 6rem;
   border-radius: 46px;
+  position: relative;
 }
 .spreadsheet .price p {
   font-size: 1.5rem;
