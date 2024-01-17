@@ -1,5 +1,8 @@
 <?php /* Template Name: Onglerie */
 get_header();
+
+
+
 ?>
 
 
@@ -58,21 +61,29 @@ get_header();
 </h3>
 
 
-<div class="container-beaute">
-    <div class="left">
-        <img class="img-beaute" src="https://picsum.photos/800/800" alt="">
-    </div>
-    <div class="right">
-        <div class="price">
-            <h3 class="text-onglerie">Beauté des mains</h3>
-            <p>30 minutes / 30€</p>
+<?php
+
+
+foreach (get_field('description_container', get_the_ID()) as $i => $description_container) :
+
+    // make alternate css class for spreadsheet if modulo 2 == 0
+    $class = ($i % 2 == 0) ? 'container-even' : 'container-odd';
+
+?>
+    <div class="container-description <?php echo $class; ?>">
+        <div class="left">
+            <img class="img-beaute" src="<?php echo $description_container['image']['url']; ?>" alt="" srcset="">
         </div>
-        <div class="description">
-            <p>Votre esthéticienne lime votre ongle, repousse et retire les cuticules et enfin applique une base
-                transparente protectrice et qui sublime vos ongles.</p>
+        <div class="right">
+            <div class="price">
+                <h3 class="text-onglerie"><?php echo $description_container['title']; ?></h3>
+            </div>
+            <div class="description">
+                <p><?php echo $description_container['description']; ?></p>
+            </div>
         </div>
     </div>
-</div>
+<?php endforeach; ?>
 
 <h3 class="supplement">
     Nous proposons également le soin <b>Calluspeeling Yumi Feet.</b>

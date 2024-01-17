@@ -1,0 +1,99 @@
+/** @format */
+
+.container-description {
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.container-even {
+  flex-direction: row;
+}
+.container-odd {
+  flex-direction: row-reverse;
+}
+.container-description .left {
+  height: auto;
+  width: 52%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.container-description .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* position: absolute; */
+  border-radius: 46px;
+}
+.container-description .right {
+  display: flex;
+  flex: 1;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: auto;
+  gap: 2rem;
+}
+.container-description .right .price {
+  border: 1px solid var(--color-text-green);
+  width: 73%;
+  padding: 10px;
+  border-radius: 50px;
+  left: 50%;
+  transform: translateX(10%);
+}
+.container-description .right .price p {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  color: var(--color-text-green);
+  margin: 1rem;
+}
+.container-description .right .price h3 {
+  font-family: "Bollent";
+  font-size: 2rem;
+  color: var(--color-text-green);
+  text-align: center;
+  margin: 10px;
+}
+
+.container-description .right .description {
+  background-color: var(--color-green-1);
+  width: 70%;
+  padding: 2rem;
+}
+.container-description .right .description p {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  color: var(--color-text-green);
+}
+
+.container-odd .right .description {
+  border-radius: 50px 0% 0% 50px/50px 0% 0% 50px;
+}
+
+.container-even .right .description {
+  border-radius: 0% 50px 50px 0%/0% 50px 50px 0%;
+}
+
+.container-odd .right .price {
+  border: 1px solid var(--color-text-green);
+  width: 73%;
+  padding: 10px;
+  border-radius: 50px;
+  left: 50%;
+  transform: translateX(-11%);
+}
+
+.container-odd .right {
+  align-items: flex-end;
+}

@@ -1,0 +1,44 @@
+/** @format */
+
+.kalendes-button {
+  background-color: #ad9122 !important;
+  color: white !important;
+}
+
+.kalendes-button.bordered.primary.bg-white {
+  color: #9fb393 !important;
+  border-color: #9fb393 !important;
+}
+
+.root-item {
+  color: #ad9122 !important;
+}
+
+.booking-famille-box-libelle {
+  background-color: #ad9122 !important;
+}
+
+.gift-card-options-bottom {
+  background-color: #ad9122 !important;
+}
+
+.header-number {
+  border-color: #ad9122 !important;
+  color: #ad9122 !important;
+}
+
+.sous-titre {
+  color: #ad9122 !important;
+}
+
+#gift-card-footer {
+  background: #ad9122 !important;
+}
+
+#kalendes-widget-container {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  position: relative !important;
+  margin: 5rem 0 !important;
+  width: 70% !important;
+}

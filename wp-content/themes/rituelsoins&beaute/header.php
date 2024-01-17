@@ -8,11 +8,11 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <header class="header">
         <div class="header-info">
             <p>
-                Rituels Soins & Beauté, votre institut à Challes-les-Eaux
+                Rituels Soins & Beauté, institut à Challes-les-Eaux
             </p>
         </div>
 

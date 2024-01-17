@@ -33,13 +33,13 @@ get_header();
     </h3>
 </div>
 
-<?php foreach (get_field('description-container') as $i => $description_container) :
+<?php foreach (get_field('description_container') as $i => $description_container) :
 
     // make alternate css class for spreadsheet if modulo 2 == 0
     $class = ($i % 2 == 0) ? 'container-even' : 'container-odd';
 
 ?>
-<div class="container-beaute">
+<div class="container-description <?php echo $class; ?>">
     <div class="left">
         <img class="img-beaute" src="<?php echo $description_container['image']['url']; ?>" alt="" srcset="">
     </div>
@@ -63,7 +63,7 @@ get_header();
 
     <p>Sur la boutique en ligne, vous pourrez personnaliser et imprimer les bons cadeaux depuis chez vous.</p>
 </div>
-
+<div id="kalendes-widget-container"></div>
 
 
 <div class="border-solid">
@@ -79,9 +79,17 @@ get_header();
             cabine.
         </p>
     </div>
+
     <div class="right-text container">
         <h3>
             Merci pour votre compréhension !
         </h3>
     </div>
 </div>
+
+
+
+
+
+
+<?php get_footer(); ?>
