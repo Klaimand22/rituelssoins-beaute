@@ -6,13 +6,12 @@
     </div>
 
     <div class="footer-logo">
-        <img src="<?php echo get_template_directory_uri() . '/assets/images/Logo_principal_vectoriel_noir.svg' ?>"
-            alt="logo rituels soins et beauté">
+        <img src="<?php echo get_template_directory_uri() . '/assets/images/Logo_principal_vectoriel_noir.svg' ?>" alt="logo rituels soins et beauté">
     </div>
 
     <div class="footer-container">
 
-        <!-- test -->
+
         <nav class="footer-nav">
             <ul>
                 <li>
@@ -36,32 +35,28 @@
 
         <div class="footer-contact">
             <div class="footer-contact-info">
-                <img src="<?php echo get_template_directory_uri() . '/assets/icone_SVG/icone_lieu.svg' ?>"
-                    alt="logo adresse">
+                <img src="<?php echo get_template_directory_uri() . '/assets/icone_SVG/icone_lieu.svg' ?>" alt="logo adresse">
                 <p>ADRESSE
                     <br> ZA du Puits d'Ordet
                     <br>73 190 CHALLES-LES-EAUX
                 </p>
             </div>
             <div class="footer-contact-info">
-                <img src="<?php echo get_template_directory_uri() . '/assets/icone_SVG/icone_tel.svg' ?>"
-                    alt="logo tel">
+                <img src="<?php echo get_template_directory_uri() . '/assets/icone_SVG/icone_tel.svg' ?>" alt="logo tel">
                 <p>TÉLÉPHONE
                     <br>
                     04 79 44 31 85
                 </p>
             </div>
             <div class="footer-contact-info">
-                <img src="<?php echo get_template_directory_uri() . '/assets/icone_SVG/icone_facebook.svg' ?>"
-                    alt="logo facebook">
+                <img src="<?php echo get_template_directory_uri() . '/assets/icone_SVG/icone_facebook.svg' ?>" alt="logo facebook">
                 <p>FACEBOOK
                     <br>
                     @Rituels soins et beauté
                 </p>
             </div>
             <div class="footer-contact-info">
-                <img src="<?php echo get_template_directory_uri() . '/assets/icone_SVG/icone_insta.svg' ?>"
-                    alt="logo instagram">
+                <img src="<?php echo get_template_directory_uri() . '/assets/icone_SVG/icone_insta.svg' ?>" alt="logo instagram">
                 <p>INSTAGRAM
                     <br>
                     @Rituels soins et beauté
@@ -71,8 +66,7 @@
 
         <div class="footer-mentions">
             <div class="footer-mentions-info">
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/Logo_secondaire_vectoriel_noir.svg' ?>"
-                    alt="logo cgv">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/Logo_secondaire_vectoriel_noir.svg' ?>" alt="logo cgv">
             </div>
             <div class="footer-mentions-info">
                 <div class="rgpd">

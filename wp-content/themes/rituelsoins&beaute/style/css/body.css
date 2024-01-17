@@ -9,6 +9,9 @@
   --color-white: #f9f3f2;
 }
 
+.border-radius {
+  border-radius: 45px;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -94,4 +97,22 @@ body {
 
 .border-solid {
   border: 1px solid var(--color-text-green);
+}
+
+
+.text-padding-green {
+  width: 50vw;
+  background-color: var(--color-green-1);
+  margin: 0 auto;
+}
+
+.text-padding-green h3 {
+
+  padding: 1rem;
+
+  color: var(--color-text-green);
+  font-family: "Montserrat" !important;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }

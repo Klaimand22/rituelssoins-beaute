@@ -1,11 +1,12 @@
-<?php /* Template Name: Soins corps  */
+<?php /* Template Name: Nos Formules */
 get_header();
 
 
 ?>
 
-<h1 class="title-page">Soins visage corps</h1>
-<h2 class="subtitle-page">Une parenthèse de détente, de douceur et de bien-être. </h2>
+<h1 class="title-page">Nos Formules</h1>
+<h2 class="subtitle-page">
+    Nous vous proposons des formules soins afin de prolonger votre parenthèse bien-être. </h2>
 
 
 <?php foreach (get_field('prices') as $i => $soin) :

@@ -120,13 +120,16 @@
                 "param": "post_template",
                 "operator": "==",
                 "value": "template\/page-soins-visage.php"
-            }
-        ],
-        [
+            },
             {
                 "param": "post_template",
                 "operator": "==",
                 "value": "template\/page-soins-corps.php"
+            },
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-beaute-du-regard.php"
             }
         ]
     ],
@@ -146,5 +149,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1705502311
+    "modified": 1705518244
 }
