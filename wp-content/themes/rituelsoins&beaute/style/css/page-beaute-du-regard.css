@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/*
+<div class="tarif-container">
+    <div class="tarif">
+        <p>
+            Teinture sourcils
+            14€
+
+            Teinture cils
+            20€
+
+            Teinture sourcils et cils
+            31€
+        </p>
+        <img src="https://picsum.photos/200/300" alt="">
+    </div>
+</div> */
+.tarif-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+.tarif-container .tarif {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10rem 0px;
+  gap: 2vw;
+  height: 34vh;
+}
+.tarif-container .tarif .text {
+  border: 1px solid var(--color-green-1);
+  border-radius: 46px;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tarif-container .tarif .text h2 {
+  font-family: "Bollent", sans-serif;
+  font-size: 2.5rem;
+  color: var(--color-black);
+  text-align: center;
+  margin-bottom: 1vw;
+}
+.tarif-container .tarif .text p {
+  padding: 1vw 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: var(--color-text-green);
+  margin-bottom: 1vw;
+  margin-left: 3vw;
+  padding: 10px;
+  line-height: 3rem;
+}
+.tarif-container .tarif img {
+  min-width: 30vh;
+  min-height: 30vh;
+  border-radius: 46px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=page-beaute-du-regard.css.map */

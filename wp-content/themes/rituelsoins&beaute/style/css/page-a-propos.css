@@ -1,0 +1,278 @@
+.team-description {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.team-description .text {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: start;
+}
+.team-description .text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Bollent", sans-serif;
+}
+.team-description .text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 74%;
+  line-height: 2;
+}
+.team-description .image {
+  width: 23rem;
+  min-height: 26rem;
+  position: relative;
+  border-radius: 49% 49% 2% 2%/40% 40% 2% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.team-composition {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.team-composition .team-member {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-composition .team-member .text h3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Bollent", sans-serif;
+  margin-top: 2rem;
+}
+.team-composition .team-member .text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 74%;
+  line-height: 2;
+}
+.team-composition .team-member .image {
+  width: 13rem;
+  min-height: 16rem;
+  position: relative;
+  border-radius: 49% 49% 2% 2%/40% 40% 2% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.team-composition .team-member .image h4 {
+  font-size: 1rem;
+  margin-top: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.team-composition .team-member .image img {
+  width: 45px;
+  height: 45px;
+  border-radius: 60px;
+  margin-top: 2rem;
+}
+.team-composition .team-member .image p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 74%;
+  line-height: 2;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.about-banner {
+  margin-top: 10rem;
+  margin-bottom: 30rem;
+  width: 100%;
+  height: 20vh;
+  background-color: var(--color-green-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-banner .center-text {
+  margin-top: 0 !important;
+}
+.about-banner .center-text p {
+  margin-bottom: 0 !important;
+}
+.about-banner .image {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60vh;
+  border-radius: 46px;
+}
+.about-banner .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 46px;
+}
+
+.expertise {
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  width: 80%;
+  height: auto;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  display: flex;
+  align-items: center;
+  margin-top: 36rem;
+}
+.expertise .text {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.expertise .text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Bollent", sans-serif;
+  text-align: start;
+}
+.expertise .text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 74%;
+  line-height: 2;
+  text-align: start;
+}
+.expertise .image {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.expertise .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 46px;
+}
+
+.banner-image {
+  width: 100%;
+  background-color: var(--color-green-1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  padding: 2rem 0;
+  position: relative;
+  gap: 5rem;
+}
+.banner-image img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 46px;
+}
+
+.horaire .horaire-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.horaire .horaire-day-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.horaire .horaire-day-container .line {
+  width: 50%;
+  height: 1px;
+  background-color: black;
+  margin: 10px 0;
+}
+.horaire .horaire-day-container .horaire-day {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.horaire .horaire-day-container .horaire-day h3 {
+  font-size: 1.2 rem;
+  font-family: "Montserrat", sans-serif;
+}
+.horaire .horaire-day-container .horaire-day .bold {
+  font-weight: bold;
+}
+
+.contact {
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  width: 70%;
+  position: relative;
+  background-color: var(--color-green-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  border-radius: 45px;
+}
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 2;
+  text-align: center;
+}
+
+.contact::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  border-radius: 45px;
+  border: 1px solid #9b9c86;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=page-a-propos.css.map */
