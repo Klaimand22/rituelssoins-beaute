@@ -69,12 +69,17 @@ get_header();
                         <div class="services-grid-img">
                             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
-                        <div class="services-grid-hover">
+                        <div class="services-grid-hover ">
                             <h3><?php the_field("service-grid{$i}-title"); ?></h3>
-                            <p><?php the_field("service-grid{$i}-description"); ?></p>
-                            <a class="button button-pink" href="<?php echo get_home_url() . the_field("service-grid{$i}-title"); ?>">Voir nos
-                                soins
-                                <?php the_field("service-grid{$i}-title"); ?></a>
+                            <div class="grid">
+                                <div class="grid-inner">
+
+                                    <p><?php the_field("service-grid{$i}-description"); ?></p>
+                                    <a class="button button-pink" href="<?php echo get_home_url() . the_field("service-grid{$i}-title"); ?>">Voir nos
+                                        soins
+                                        <?php the_field("service-grid{$i}-title"); ?></a>
+                                </div>
+                            </div>
                         </div>
                         </div>
                     </div>

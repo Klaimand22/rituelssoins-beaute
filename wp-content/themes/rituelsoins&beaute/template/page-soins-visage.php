@@ -4,9 +4,10 @@ get_header();
 
 ?>
 
-<h1 class="title-page">Soins visage Phyt’s</h1>
-<h2 class="subtitle-page">Une parenthèse de détente, de douceur et de bien-être. </h2>
-
+<?php foreach (get_field('title_description') as $i => $title_description) : ?>
+<h1 class="title-page"><?php echo $title_description['title']; ?></h1>
+<h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
+<?php endforeach; ?>
 
 <?php foreach (get_field('prices') as $i => $soin) :
 

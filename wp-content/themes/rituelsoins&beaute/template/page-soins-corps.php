@@ -3,10 +3,10 @@ get_header();
 
 
 ?>
-
-<h1 class="title-page">Soins visage corps</h1>
-<h2 class="subtitle-page">Une parenthèse de détente, de douceur et de bien-être. </h2>
-
+<?php foreach (get_field('title_description') as $i => $title_description) : ?>
+<h1 class="title-page"><?php echo $title_description['title']; ?></h1>
+<h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
+<?php endforeach; ?>
 
 <?php foreach (get_field('prices') as $i => $soin) :
 
@@ -14,21 +14,21 @@ get_header();
     $class = ($i % 2 == 0) ? 'spreadsheet-even' : 'spreadsheet-odd';
 
 ?>
-    <div class="spreadsheet <?php echo $class; ?>">
-        <div class="details">
-            <h3><?php echo $soin['title']; ?></h3>
-            <p><?php echo $soin['description']; ?></p>
-        </div>
-        <div class="price">
+<div class="spreadsheet <?php echo $class; ?>">
+    <div class="details">
+        <h3><?php echo $soin['title']; ?></h3>
+        <p><?php echo $soin['description']; ?></p>
+    </div>
+    <div class="price">
 
-            <div class="service-price">
-                <div class="duration">
-                    <p><?php echo $soin['duration']; ?></p>
-                </div>
-                <p><?php echo $soin['price']; ?></p>
+        <div class="service-price">
+            <div class="duration">
+                <p><?php echo $soin['duration']; ?></p>
             </div>
+            <p><?php echo $soin['price']; ?></p>
         </div>
     </div>
+</div>
 <?php endforeach; ?>
 
 

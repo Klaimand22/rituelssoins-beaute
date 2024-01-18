@@ -1,11 +1,11 @@
 {
-    "key": "group_65a7e4b4d48a3",
-    "title": "Prix",
+    "key": "group_65a91c262a0f4",
+    "title": "Titre \/ Description Page",
     "fields": [
         {
-            "key": "field_65a7e4b541b3f",
-            "label": "Prix",
-            "name": "prices",
+            "key": "field_65a91c279372d",
+            "label": "Titre Description",
+            "name": "title_description",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -26,8 +26,8 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_65a7e52c41b40",
-                    "label": "Titre",
+                    "key": "field_65a91c479372e",
+                    "label": "Title",
                     "name": "title",
                     "aria-label": "",
                     "type": "text",
@@ -44,10 +44,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_65a7e4b541b3f"
+                    "parent_repeater": "field_65a91c279372d"
                 },
                 {
-                    "key": "field_65a7e53741b41",
+                    "key": "field_65a91c549372f",
                     "label": "Description",
                     "name": "description",
                     "aria-label": "",
@@ -65,63 +65,13 @@
                     "maxlength": "",
                     "rows": "",
                     "placeholder": "",
-                    "new_lines": "br",
-                    "parent_repeater": "field_65a7e4b541b3f"
-                },
-                {
-                    "key": "field_65a7e55341b42",
-                    "label": "durée",
-                    "name": "duration",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_65a7e4b541b3f"
-                },
-                {
-                    "key": "field_65a7e56941b43",
-                    "label": "prix",
-                    "name": "price",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "acfe_textarea_code": 0,
-                    "maxlength": "",
-                    "rows": 3,
-                    "placeholder": "",
-                    "new_lines": "br",
-                    "parent_repeater": "field_65a7e4b541b3f"
+                    "new_lines": "",
+                    "parent_repeater": "field_65a91c279372d"
                 }
             ]
         }
     ],
     "location": [
-        [
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "template\/page-soins-visage.php"
-            }
-        ],
         [
             {
                 "param": "post_template",
@@ -134,6 +84,76 @@
                 "param": "post_template",
                 "operator": "==",
                 "value": "template\/page-soins-nos-formules.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-soins-visage.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-a-propos.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-beaute-du-regard.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-epilation.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-idee-cadeau.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-minceur.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-mise-en-beauté.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-onglerie.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-reserver-en-ligne.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-reserver-en-ligne.php"
             }
         ]
     ],
@@ -153,5 +173,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1705581734
+    "modified": 1705582108
 }

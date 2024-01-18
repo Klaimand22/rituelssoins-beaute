@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /** @format */
 /** @format */
 @font-face {
@@ -15,9 +14,8 @@
 }
 .container-background {
   width: 100%;
-  height: 80vh;
   position: relative;
-  overflow: hidden;
+  /*   overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +31,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
   object-fit: fill;
 }
 
@@ -158,7 +156,7 @@
   color: var(--color-text-green);
   font-family: "Montserrat", "regular";
   text-align: center;
-  margin: 0.5rem 0;
+  margin: 0.5rem 50px;
   padding: 0.5rem 0;
   font-weight: 0;
   background-color: var(--color-green-1);
@@ -168,28 +166,49 @@
   opacity: 1;
   transform: translateY(-20px);
 }
-.services-grid .services-grid-item .services-grid-hover h3:hover + .services-grid-hover p, .services-grid .services-grid-item .services-grid-hover h3:hover + .services-grid-hover a {
+.services-grid .services-grid-item .services-grid-hover h3:hover + .services-grid-hover p,
+.services-grid .services-grid-item .services-grid-hover h3:hover + .services-grid-hover a {
   display: block;
   transition: 0.5s;
+  margin-left: 50px;
 }
-.services-grid .services-grid-item .services-grid-hover p, .services-grid .services-grid-item .services-grid-hover a {
+.services-grid .services-grid-item .services-grid-hover p,
+.services-grid .services-grid-item .services-grid-hover a {
   font-size: 1rem;
   color: var(--color-text-green);
   font-family: "Montserrat", "regular";
   text-align: start;
   margin: 0.5rem 0;
   font-weight: 0;
-  display: none;
   opacity: 0;
-  transition: opacity 0.5s ease; /* Ajoute une transition à l'opacité */
+  transition: opacity 1s ease-out;
 }
 .services-grid .services-grid-item:hover .services-grid-hover {
   opacity: 1;
 }
-.services-grid .services-grid-item:hover .services-grid-hover p, .services-grid .services-grid-item:hover .services-grid-hover a {
-  display: block;
+.services-grid .services-grid-item:hover .services-grid-hover p,
+.services-grid .services-grid-item:hover .services-grid-hover a {
+  margin-left: 50px;
   opacity: 1;
   transition: 0.5s;
+  width: 55%;
+}
+.services-grid .services-grid-item:hover .grid {
+  grid-template-rows: 1fr; /* 5 */
+}
+
+.grid {
+  display: grid; /* 1 */
+  grid-template-rows: 0fr; /* 2 */
+  transition: grid-template-rows 0.5s ease-in-out; /* 3 */
+}
+
+.grid.open {
+  grid-template-rows: 1fr; /* 5 */
+}
+
+.grid-inner {
+  overflow: hidden; /* 4 */
 }
 
 /*# sourceMappingURL=page-home.css.map */

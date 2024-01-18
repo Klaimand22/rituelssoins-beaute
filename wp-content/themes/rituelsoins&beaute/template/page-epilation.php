@@ -2,48 +2,44 @@
 get_header();
 ?>
 
-<h1 class="title-page">Epilation</h1>
+<?php foreach (get_field('title_description') as $i => $title_description) : ?>
+    <h1 class="title-page"><?php echo $title_description['title']; ?></h1>
+    <h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
+<?php endforeach; ?>
 
 <div class="epilation-price">
-    <div class="cire-price">
-        <?php $image = get_field('epilation-cire-icone');
-        if (!empty($image)) : ?>
-            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-        <?php endif; ?>
-        <div class="epilation-stuff-price-text">
-            <h2><?php the_field('epilation-stuff-title1'); ?></h2>
-            <p><?php the_field('epilation-stuff-price1'); ?>€</p>
-        </div>
-        <div class="epilation-stuff-price-text">
-            <h2><?php the_field('epilation-stuff-title2'); ?></h2>
-            <p><?php the_field('epilation-stuff-price2'); ?>€</p>
-        </div>
-        <div class="epilation-stuff-price-text">
-            <h2><?php the_field('epilation-stuff-title3'); ?></h2>
-            <p><?php the_field('epilation-stuff-price3'); ?>€</p>
-        </div>
 
-    </div>
-    <div class="fil-price">
-        <?php $image = get_field('epilation-cire-icone');
-        if (!empty($image)) : ?>
-            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-        <?php endif; ?>
-        <div class="epilation-stuff-price-text">
-            <h2><?php the_field('epilation-stuff-title1'); ?></h2>
-            <p><?php the_field('epilation-stuff-price1'); ?>€</p>
+    <!-- dynamic version -->
+    <?php foreach (get_field('cire-price') as $i => $cire_price) : ?>
+        <div class="cire-price">
+            <?php $image = $cire_price['icone'];
+            if (!empty($image)) : ?>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <?php endif; ?>
+            <div class="epilation-stuff-price-text">
+                <h2><?php echo $cire_price['title']; ?></h2>
+                <p><?php echo $cire_price['description']; ?></p>
+            </div>
         </div>
-        <div class="epilation-stuff-price-text">
-            <h2><?php the_field('epilation-stuff-title2'); ?></h2>
-            <p><?php the_field('epilation-stuff-price2'); ?>€</p>
-        </div>
-        <div class="epilation-stuff-price-text">
-            <h2><?php the_field('epilation-stuff-title3'); ?></h2>
-            <p><?php the_field('epilation-stuff-price3'); ?>€</p>
-        </div>
+    <?php endforeach; ?>
 
-    </div>
+    <?php foreach (get_field('fil-price') as $i => $fil_price) : ?>
+        <div class="fil-price">
+            <?php $image = $fil_price['icone'];
+            if (!empty($image)) : ?>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <?php endif; ?>
+            <div class="epilation-stuff-price-text">
+                <h2><?php echo $fil_price['title']; ?></h2>
+                <p><?php echo $fil_price['description']; ?></p>
+            </div>
+
+        </div>
+    <?php endforeach; ?>
 </div>
+
+
+
 
 
 <div class="epilation-banner">
@@ -58,14 +54,16 @@ get_header();
 <div class="forfait-container">
     <div class="forfait-container-border">
         <h2>Forfait Epilation</h2>
-        <p>Nous proposons également un forfait épilation comprenant les aisselles, le maillot au choix ainsi que les
+        <p>Nous proposons également un forfait épilation comprenant les aisselles, le maillot au choix ainsi que
+            les
             jambes au choix. 
             <br>
             Pour toutes zones supplémentaires, nous demandons un supplément de 4€. 
         </p>
     </div>
     <div class="forfait-container-download">
-        <a class="button button-green" href="<?php echo get_home_url() . '/wp-content/uploads/2021/03/forfait-epilation.pdf' ?>">TÉLÉCHARGER LA
+        <a class="button button-green" href="<?php echo get_home_url() . '/wp-content/uploads/2021/03/forfait-epilation.pdf' ?>">TÉLÉCHARGER
+            LA
             PLAQUETTE TARIFAIRE </a>
     </div>
 
@@ -108,4 +106,6 @@ get_header();
 </div>
 
 
-<? get_footer(); ?>
+
+
+<?php get_footer(); ?>

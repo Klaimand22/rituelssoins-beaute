@@ -48,10 +48,9 @@ body {
 }
 
 .center {
-left : 50%;
-transform: translateX(-50%);
-position: relative;
-
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
 }
 .center-text {
   margin-top: 10rem;
@@ -132,31 +131,26 @@ position: relative;
 .border-solid-top {
   border-top: 1px solid var(--color-text-green);
   width: 100%;
-
 }
 .border-solid-bottom {
   border-bottom: 1px solid var(--color-text-green);
   width: 100%;
-
 }
 .margin-top-5 {
   margin-top: 5rem !important;
 }
 
-
 .text-padding-green {
   width: 60vw;
   background-color: var(--color-green-1);
   margin: 0 auto;
-  display : flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
 }
 
 .text-padding-green h3 {
-
   padding: 1rem;
   color: var(--color-text-green);
   font-family: "Montserrat" !important;
@@ -164,13 +158,11 @@ position: relative;
   text-align: left;
 }
 
-
 .text-padding-green img {
-
-width: 80px;
-height: 80px;
-border-radius: 60px;
-margin-right: 1rem;
-margin-left: 1rem;
-padding: 1rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 60px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
 }

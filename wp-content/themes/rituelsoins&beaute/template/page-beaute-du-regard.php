@@ -4,8 +4,10 @@ get_header();
 
 ?>
 
-<h1 class="title-page">Beauté du regard</h1>
-<h2 class="subtitle-page"></h2>
+<?php foreach (get_field('title_description') as $i => $title_description) : ?>
+<h1 class="title-page"><?php echo $title_description['title']; ?></h1>
+<h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
+<?php endforeach; ?>
 
 <div class="tarif-container">
     <div class="tarif">
@@ -73,7 +75,7 @@ get_header();
     </h3>
 </div>
 
-<div class="center-text">
+<div class="center-text margin-top-5">
     <p> Teinture cils/sourcils, rehaussement, soin lash botox : trouvez le soin qui correspond à vos
         envies et
         vos besoins.</h3>
