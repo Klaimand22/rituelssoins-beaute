@@ -231,3 +231,100 @@
 .grid-inner {
   overflow: hidden; /* 4 */
 }
+
+@media screen and (max-width: 1024px) {
+  .services-grid .services-grid-item .services-grid-img {
+    position: relative;
+    width: 28rem;
+    height: 28rem;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-grid .services-grid-item .services-grid-img {
+    position: relative;
+    width: 21rem;
+    height: 21rem;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  .services-grid .services-grid-item .services-grid-hover {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    bottom: 0;
+    background-color: var(--color-green-1);
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .services-grid .services-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin: 30vh 0;
+  }
+
+  .services .services-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    height: 20vh;
+  }
+
+  .services .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 30vh 0;
+  }
+
+  .services-grid .services-grid-item .services-grid-img {
+    position: relative;
+    width: 18rem;
+    height: 23rem;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  .services-grid .services-grid-item .services-grid-hover {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    bottom: 0;
+    background-color: var(--color-green-1);
+    border-radius: 8px;
+  }
+  .discover h1 {
+    color: var(--color-text-green);
+    font-family: "Bollent";
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}

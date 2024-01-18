@@ -20,3 +20,21 @@
 @import "./style/css/page-idee-cadeau.css";
 @import "./style/css/page-beaute-du-regard.css";
 @import "./style/css/page-a-propos.css";
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: tomato !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: limegreen !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-color: dodgerblue !important;
+  }
+}

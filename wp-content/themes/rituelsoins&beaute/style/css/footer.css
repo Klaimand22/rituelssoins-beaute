@@ -173,4 +173,38 @@ footer .footer-mentions .footer-mentions-image img {
   object-fit: cover;
 }
 
+/* RESPONSIVE 1024 PX */
+@media (max-width: 1024px) {
+  footer .footer-contact {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+  footer .footer-contact .footer-contact-info img {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+}
+/* RESPONSIVE 768 PX */
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: tomato !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  footer {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=footer.css.map */

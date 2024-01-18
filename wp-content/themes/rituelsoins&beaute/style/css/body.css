@@ -9,6 +9,10 @@
   --color-white: #f9f3f2;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .border-radius {
   border-radius: 45px;
 }
