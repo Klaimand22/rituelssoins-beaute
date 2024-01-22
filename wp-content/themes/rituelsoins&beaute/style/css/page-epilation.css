@@ -68,7 +68,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 17rem;
+  gap: 3rem;
 }
 .epilation-price .fil-price {
   width: 358px;
@@ -99,7 +99,7 @@
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 28px;
 }
 .epilation-price .fil-price img {
@@ -232,10 +232,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 0px;
+    gap: 30px;
     margin: 10rem 0;
   }
 }
+.epilation-card-container .epilation-card-item {
+  width: 79%;
+  background-color: var(--color-green-1);
+  border-radius: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   .epilation-card-container .epilation-card-item .text {
     position: relative;
@@ -247,8 +258,17 @@
     justify-content: space-between;
     padding-bottom: 2rem;
   }
+  .epilation-price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 10rem 0;
+  }
   .epilation-price .cire-price {
-    width: 26.25rem rem;
+    width: 26.25rem;
     height: auto;
     position: relative;
     background-color: #cdd6c8;
@@ -274,6 +294,7 @@
     color: var(--color-text-green);
   }
 }
+/*-------------------------------------------------------------- RESPONSIVE  TEL ------------------------------------------------------------------------------------ */
 @media screen and (max-width: 375px) {
   .epilation-card-container .epilation-card-item {
     width: 90%;
@@ -296,7 +317,6 @@
     padding: 5rem 0;
   }
   .button {
-    background-color: orange;
     color: #fff;
     border: none;
     border-radius: 100px;
@@ -307,6 +327,25 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
+  }
+  .epilation-price .cire-price {
+    width: 24.25rem;
+    height: auto;
+    position: relative;
+    background-color: #cdd6c8;
+    border-radius: 49% 49% 2% 2%/40% 40% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem 0;
+  }
+  .epilation-price .cire-price .epilation-stuff-price-text .colonne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
   .epilation-price {
     width: 100%;
@@ -322,9 +361,11 @@
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 20px;
-    text-align: center;
+    /* text-align: center; */
+    /* width: 42%; */
+    /* gap: 1rem; */
   }
   .epilation-price .cire-price h2 {
     color: #293124;
@@ -341,6 +382,15 @@
     display: none;
     position: absolute;
   }
+}
+.epilation-price .cire-price .epilation-stuff-price-text .colonne {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  /* width: 100%; */
 }
 
 /*# sourceMappingURL=page-epilation.css.map */

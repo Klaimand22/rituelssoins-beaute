@@ -22,6 +22,7 @@
 @import "./style/css/page-idee-cadeau.css";
 @import "./style/css/page-beaute-du-regard.css";
 @import "./style/css/page-a-propos.css";
+@import "./style/css/page-soins.css";
 
 @media screen and (max-width: 1024px) {
   body {

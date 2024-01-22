@@ -56,6 +56,16 @@ body {
   transform: translateX(-50%);
   position: relative;
 }
+
+.center-div {
+
+  left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .center-text {
   margin-top: 10rem;
   width: 60%;

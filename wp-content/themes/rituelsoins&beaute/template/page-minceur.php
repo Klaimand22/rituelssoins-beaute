@@ -112,13 +112,7 @@ get_header(); ?>
 
 <div class="minceur-video">
 
-    <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/usYa-wGvlo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G5OBs9A0pw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- -->
-
     <?php
-    //  ne pas utiliser actuellement
-
 
     $video = get_field('url-youtube1');
     if (!empty($video)) :
@@ -139,6 +133,7 @@ get_header(); ?>
     <?php endif;
 
     ?>
+
 
 
 </div>

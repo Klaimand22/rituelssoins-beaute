@@ -1,4 +1,7 @@
 <?php
-get_header();
-echo "Erreur 404 - Page non trouvée";
-get_footer();
+/* rediriger vers page-home.php */
+$home_url = get_home_url();
+header("Location: $home_url");
+exit;
+?>
+```
