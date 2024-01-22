@@ -23,6 +23,12 @@
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
 }
+.spreadsheet .spreadsheet-even {
+  background-color: var(--color-green-2);
+}
+.spreadsheet .spreadsheet-odd {
+  background-color: var(--color-green-1);
+}
 .spreadsheet .price {
   display: flex;
   justify-content: flex-start;
@@ -31,13 +37,12 @@
   width: 50%;
 }
 .spreadsheet .price .duration {
-  background-color: var(--color-green-1);
   padding: 0.5rem 3rem;
   border-radius: 46px;
   z-index: 10;
   position: absolute;
   top: -1.5rem;
-  left: calc(30% - 5rem);
+  right: calc(30% - 5rem);
 }
 .spreadsheet .price .duration p {
   font-size: 1.3rem;
@@ -49,7 +54,6 @@
   border: 1px solid var(--color-green-2);
   padding: 1rem 6rem;
   border-radius: 46px;
-  position: relative;
 }
 .spreadsheet .price p {
   font-size: 1.5rem;

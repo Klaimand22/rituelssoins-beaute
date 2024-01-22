@@ -25,6 +25,12 @@
       font-family: "Montserrat", sans-serif;
     }
   }
+  .spreadsheet-even {
+    background-color: var(--color-green-2);
+  }
+  .spreadsheet-odd {
+    background-color: var(--color-green-1);
+  }
 
   .price {
     display: flex;
@@ -34,7 +40,6 @@
     width: 50%;
 
     .duration {
-      background-color: var(--color-green-1);
       padding: 0.5rem 3rem;
       border-radius: 46px;
       z-index: 10;

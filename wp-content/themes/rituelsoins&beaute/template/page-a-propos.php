@@ -4,8 +4,8 @@ get_header();
 ?>
 
 <?php foreach (get_field('title_description') as $i => $title_description) : ?>
-    <h1 class="title-page"><?php echo $title_description['title']; ?></h1>
-    <h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
+<h1 class="title-page"><?php echo $title_description['title']; ?></h1>
+<h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
 <?php endforeach; ?>
 
 <div class="team-description">
@@ -17,12 +17,16 @@ get_header();
                 d’expérience dans le domaine de la beauté et du bien-être.
                 Nos esthéticiennes qualifiées en esthétique et cosmétique sont passionnées par le mieux-être et suivent
                 régulièrement des formations de qualité.
+                <?php echo get_field('team-description'); ?>
             </p>
     </div>
-    <div class="image" style='background-image : url("https://picsum.photos/200/300")'>
-    </div>
 
-</div>
+    <div class="image"
+        style="background-image: url('<?php echo get_template_directory_uri() . '/assets/icone_PNG/icone_calendrier.png' ?>"
+        alt="icone calendrier" width="100px" height="100px">
+
+
+    </div>
 </div>
 
 <div class="team-composition">
@@ -60,7 +64,11 @@ get_header();
             Offrez vous une parenthèse beauté ou bien-être au sein de notre institut Rituels Soins et Beauté.
         </p>
     </div>
-    <div class="image"><img src="https://picsum.photos/4000/1200"></div>
+    <div class="image"><iframe width="560" height="315"
+            src="https://www.youtube.com/embed/LIe64-_GQlI?si=eP1GU4q0mB_1OSh9" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe></div>
 </div>
 
 <div class="expertise">
@@ -87,12 +95,15 @@ get_header();
     <p>Nous vous accueillons dans nos nouveaux locaux au style cosy et chaleureux. Nous disposons d’un espace onglerie,
         de 2 cabines d’épilations et de 3 salles de soins. </p>
 </div>
-
 <div class="banner-image">
-    <img src="https://picsum.photos/2000/2000">
-    <img src="https://picsum.photos/2000/2000">
-    <img src="https://picsum.photos/2000/2000">
+    <!-- Dynamic version with acf -->
+    <?php foreach (get_field('banner-image') as $i => $banner_image) : ?>
+
+    <img src=" <?php echo $banner_image['image']['url']; ?>">
+    <?php endforeach; ?>
 </div>
+
+
 
 <div class=horaire>
     <div class="left-text">
@@ -116,7 +127,8 @@ get_header();
             </div>
         </div>
 
-        <img src="https://picsum.photos/100/100">
+        <img src="<?php echo get_template_directory_uri() . '/assets/icone_PNG/icone_calendrier.png' ?>"
+            alt="icone calendrier" width="100px" height="100px">
 
 
     </div>

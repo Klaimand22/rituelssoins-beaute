@@ -64,6 +64,14 @@
       gap: 2rem;
       display: flex;
       flex-direction: column;
+
+      .colonne {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 17rem;
+      }
     }
   }
   .fil-price {
@@ -114,10 +122,9 @@
   margin-top: 3rem;
 
   img {
-    width: 50%;
+    width: 100%;
     height: 340px;
     object-fit: cover;
-    filter: blur(2px);
   }
 }
 

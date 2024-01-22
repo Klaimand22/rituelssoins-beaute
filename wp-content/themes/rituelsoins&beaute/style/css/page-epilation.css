@@ -63,6 +63,13 @@
   display: flex;
   flex-direction: column;
 }
+.epilation-price .cire-price .epilation-stuff-price-text .colonne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 17rem;
+}
 .epilation-price .fil-price {
   width: 358px;
   min-height: 18rem;
@@ -108,10 +115,9 @@
   margin-top: 3rem;
 }
 .epilation-banner img {
-  width: 50%;
+  width: 100%;
   height: 340px;
   object-fit: cover;
-  filter: blur(2px);
 }
 
 .forfait-container {

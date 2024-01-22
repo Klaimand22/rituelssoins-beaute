@@ -18,7 +18,11 @@ get_header();
             <?php endif; ?>
             <div class="epilation-stuff-price-text">
                 <h2><?php echo $cire_price['title']; ?></h2>
-                <p><?php echo $cire_price['description']; ?></p>
+                <div class="colonne">
+                    <p><?php echo $cire_price['description-colonne-1']; ?></p>
+                    <p><?php echo $cire_price['description-colonne-2']; ?></p>
+                </div>
+
             </div>
         </div>
     <?php endforeach; ?>
@@ -48,17 +52,13 @@ get_header();
         <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
     <?php endif; ?>
     <!-- en attendant -->
-    <img src="https://picsum.photos/1000/1000" alt="">
 </div>
 
 <div class="forfait-container">
     <div class="forfait-container-border">
         <h2>Forfait Epilation</h2>
-        <p>Nous proposons également un forfait épilation comprenant les aisselles, le maillot au choix ainsi que
-            les
-            jambes au choix. 
-            <br>
-            Pour toutes zones supplémentaires, nous demandons un supplément de 4€. 
+        <p>
+            <?php the_field('forfait-epilation-description'); ?>
         </p>
     </div>
     <div class="forfait-container-download">

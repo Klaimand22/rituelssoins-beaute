@@ -18,26 +18,9 @@ get_header();
         <div class="container-onglerie-text">
             <h3 class="text-onglerie">Vernis Semi-Permanent</h3>
             <ul class="list-onglerie">
-                <li>Mains
-                    34€
-                    <br>
-                    Pieds
-                    36€
-                    <br>
-                    Dépose
-                    8€
-                    <br>
-                    Dépose + nouvelle pose mains
-                    16€
-                    <br>
-                    Dépose + nouvelle pose pieds
-                    12€
-                    <br>
-                    Réparation ongle
-                    5€ / ongle
-                    <br>
-                    Couche supplémentaire
-                    5€ (sur tous les doigts)
+                <?php foreach (get_field('list-onglerie') as $i => $list_onglerie) : ?>
+                <li><?php echo $list_onglerie['text']; ?></li>
+                <?php endforeach; ?>
                 </li>
             </ul>
             <img class="" src="https://picsum.photos/1920/1080" alt="">
@@ -52,7 +35,7 @@ get_header();
 
 </div>
 <div class="container-onglerie-description">
-    <p>Nous utilisons une base protéinée nourrissante pour renforcer davantage vos ongles et les solidifier.</p>
+    <p>Nous utilisons une base protéine nourrissante pour renforcer davantage vos ongles et les solidifier.</p>
 </div>
 
 <h3 class="supplement">

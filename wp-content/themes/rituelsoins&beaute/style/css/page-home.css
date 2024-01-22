@@ -29,10 +29,11 @@
 }
 .container-background .background-image {
   width: 100%;
+  height: 75vh;
   position: relative;
   overflow: hidden;
   z-index: 0;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .discover {
@@ -44,7 +45,7 @@
   align-items: center;
   flex-direction: column;
 }
-.discover p .about {
+.discover .about p {
   font-size: 0.8rem;
   color: var(--color-text-green);
   font-family: "Montserrat", sans-serif;

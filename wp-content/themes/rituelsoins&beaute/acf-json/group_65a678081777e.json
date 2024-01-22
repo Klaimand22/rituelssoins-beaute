@@ -76,8 +76,30 @@
                 },
                 {
                     "key": "field_65a938f7dbcac",
-                    "label": "description",
-                    "name": "description",
+                    "label": "description colonne gauche",
+                    "name": "description-colonne-1",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "acfe_textarea_code": 0,
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_65a938aedbca9"
+                },
+                {
+                    "key": "field_65aa3565ec814",
+                    "label": "description colonne droite",
+                    "name": "description-colonne-2",
                     "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
@@ -249,6 +271,33 @@
             "library": "all"
         },
         {
+            "key": "field_65aa36f814353",
+            "label": "Bannière Photo",
+            "name": "epilation-banner",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "return_format": "array",
+            "acfe_thumbnail": 0,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
             "key": "field_65a67908f73f5",
             "label": "Paragraphe 1 Carte 1",
             "name": "epilation-card-1-description1",
@@ -367,6 +416,27 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_65aa3861ec699",
+            "label": "description forfait epilation",
+            "name": "forfait-epilation-descriptionforfait-epilation-description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "acfe_textarea_code": 0,
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
         }
     ],
     "location": [
@@ -394,5 +464,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1705590109
+    "modified": 1705654456
 }
