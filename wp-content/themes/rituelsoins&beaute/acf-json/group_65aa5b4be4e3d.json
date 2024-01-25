@@ -51,11 +51,11 @@
             "library": "all"
         },
         {
-            "key": "field_65aa5b6ad77f7",
-            "label": "Image Employé 1",
-            "name": "image_employe_1",
+            "key": "field_65b1cea125a3e",
+            "label": "Membre de l'équipe",
+            "name": "team_members",
             "aria-label": "",
-            "type": "image",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -64,45 +64,65 @@
                 "class": "",
                 "id": ""
             },
-            "uploader": "",
-            "return_format": "array",
-            "acfe_thumbnail": 0,
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium",
-            "library": "all"
-        },
-        {
-            "key": "field_65aa5b8fd77f8",
-            "label": "Image Employé 2",
-            "name": "image_employe_2",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "uploader": "",
-            "return_format": "array",
-            "acfe_thumbnail": 0,
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium",
-            "library": "all"
+            "acfe_repeater_stylised_button": 0,
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter un élément",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_65b1ceb325a3f",
+                    "label": "image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "uploader": "",
+                    "return_format": "array",
+                    "acfe_thumbnail": 0,
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "parent_repeater": "field_65b1cea125a3e"
+                },
+                {
+                    "key": "field_65b1d2940d08f",
+                    "label": "Nom",
+                    "name": "name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65b1cea125a3e"
+                }
+            ]
         },
         {
             "key": "field_65aa5b9cd77fa",
@@ -149,9 +169,30 @@
             "height": ""
         },
         {
+            "key": "field_65b1d346426a6",
+            "label": "Description expertiste",
+            "name": "expertise_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "acfe_textarea_code": 0,
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
             "key": "field_65aa5be4d77fc",
             "label": "Image Expertise",
-            "name": "expertise-image",
+            "name": "expertise_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -176,9 +217,137 @@
             "library": "all"
         },
         {
+            "key": "field_65b1d47a647b4",
+            "label": "Description de l'institut",
+            "name": "institut_description",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65b1d6fa5bbf0",
+            "label": "Horaires d'ouverture",
+            "name": "opening_hours",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_repeater_stylised_button": 0,
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 2,
+            "collapsed": "",
+            "button_label": "Ajouter un élément",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_65b1d70f5bbf1",
+                    "label": "jour",
+                    "name": "day",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65b1d6fa5bbf0"
+                },
+                {
+                    "key": "field_65b1d7175bbf2",
+                    "label": "Heure",
+                    "name": "hours",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65b1d6fa5bbf0"
+                }
+            ]
+        },
+        {
+            "key": "field_65b1d78c50002",
+            "label": "Lien Instagram",
+            "name": "instagram_link",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65b1d9f766707",
+            "label": "Venir Description",
+            "name": "coming_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "acfe_textarea_code": 0,
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
             "key": "field_65aa61dad77fd",
             "label": "Image Venir",
-            "name": "coming-image",
+            "name": "coming_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -201,6 +370,27 @@
             "mime_types": "",
             "preview_size": "medium",
             "library": "all"
+        },
+        {
+            "key": "field_65b1d93539fe9",
+            "label": "Info de contact",
+            "name": "contact_info",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "acfe_textarea_code": 0,
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
         }
     ],
     "location": [
@@ -228,5 +418,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1705665289
+    "modified": 1706154587
 }

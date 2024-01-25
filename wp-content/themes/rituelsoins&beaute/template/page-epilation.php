@@ -62,9 +62,12 @@ get_header();
         </p>
     </div>
     <div class="forfait-container-download">
-        <a class="button button-green" href="<?php echo get_home_url() . '/wp-content/uploads/2021/03/forfait-epilation.pdf' ?>">TÉLÉCHARGER
-            LA
-            PLAQUETTE TARIFAIRE </a>
+        <?php $file = get_field('forfait-pdf');
+        if ($file) : ?>
+            <a class="button button-green" href="<?php echo $file['url']; ?>">TÉLÉCHARGER LA PLAQUETTE TARIFAIRE</a>
+        <?php endif; ?>
+
+
     </div>
 
 </div>

@@ -84,6 +84,13 @@
                 "operator": "==",
                 "value": "template\/page-soins-nos-formules.php"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-a-propos.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -102,5 +109,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1705656534
+    "modified": 1706153025
 }

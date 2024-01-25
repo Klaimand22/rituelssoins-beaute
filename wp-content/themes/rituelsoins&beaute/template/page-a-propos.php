@@ -1,6 +1,6 @@
-<?php /* Template Name: A Propos */
+<?php
+/* Template Name: A Propos */
 get_header();
-
 ?>
 
 <?php foreach (get_field('title_description') as $i => $title_description) : ?>
@@ -12,50 +12,31 @@ get_header();
     <div class="text">
         <h2>L'équipe</h3>
             <p>
-                Laura et son équipe d’esthéticiennes vous accueillent dans un espace calme et chaleureux et s’occupent
-                de vous avec bienveillance et professionnalisme. Rituels Soins et Beauté bénéficie de 10 ans
-                d’expérience dans le domaine de la beauté et du bien-être.
-                Nos esthéticiennes qualifiées en esthétique et cosmétique sont passionnées par le mieux-être et suivent
-                régulièrement des formations de qualité.
                 <?php echo get_field('team-description'); ?>
             </p>
     </div>
 
-    <div class="image"
-        style="background-image: url('<?php echo get_template_directory_uri() . '/assets/icone_PNG/icone_calendrier.png' ?>"
-        alt="icone calendrier" width="100px" height="100px">
-
-
+    <div class="image" style="background-image: url('<?php echo get_field('team-image')['url']; ?>')">
     </div>
 </div>
 
 <div class="team-composition">
+    <?php
+    $team_members = get_field('team_members');
+    if ($team_members) :
+        foreach ($team_members as $i => $team_member) :
+    ?>
     <div class="team-member">
-        <div class="image" style='background-image : url("https://picsum.photos/200/300")'>
+        <div class="image" style="background-image: url('<?php echo $team_member['image']['url']; ?>')">
         </div>
         <div class="text">
-            <h3>Laura</h3>
+            <h3><?php echo $team_member['name']; ?></h3>
         </div>
     </div>
-    <div class="team-member">
-        <div class="image" style='background-color : #CDD6C8'>
-            <h4>Envie de
-                rejoindre l’équipe ?</h4>
-            <h4>Contact Nous!</h4>
-            <img src="https://picsum.photos/100/100">
-            <h4>04 79 44 31 85</h4>
-        </div>
-        <div class="text">
-            <h3>Notre future Collegue ?</h3>
-        </div>
-    </div>
-    <div class="team-member">
-        <div class="image" style='background-image : url("https://picsum.photos/200/300")'>
-        </div>
-        <div class="text">
-            <h3>Aurelie</h3>
-        </div>
-    </div>
+    <?php
+        endforeach;
+    endif;
+    ?>
 </div>
 
 <div class="about-banner">
@@ -64,93 +45,77 @@ get_header();
             Offrez vous une parenthèse beauté ou bien-être au sein de notre institut Rituels Soins et Beauté.
         </p>
     </div>
-    <div class="image"><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/LIe64-_GQlI?si=eP1GU4q0mB_1OSh9" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe></div>
+    <div class="image">
+        <?php
+        $youtube_url = get_field('video_youtube');
+
+        if ($youtube_url) {
+            echo $youtube_url;
+        }
+        ?>
+    </div>
 </div>
 
 <div class="expertise">
     <div class="text">
         <h2>Notre expertise</h2>
-        <p>
-            La bienveillance avant toute chose : nous vous accueillons dans un cadre positif et respectueux.
-            Notre équipe est à votre écoute, s’adapte aux besoins et vous conseille sans aucun jugement.
-            La quête de l’excellence : Rituels Soins et Beauté est en veille constante sur les innovations minceur et
-            beauté.
-            Nous choisissons nos marques partenaires et nos appareils avec la plus grande exigence pour vous offrir des
-            prestations d’une grande qualité.
-            Bien-être de la planète : être en harmonie avec son corps et son esprit c’est aussi être en harmonie avec
-            ses valeurs.
-            C’est pourquoi nous accordons une grande importance à nos marques partenaires pour un engagement
-            éco-responsable tant par la composition des produits, leur emballage, mais aussi leur lieu de fabrication.
-        </p>
+        <p><?php echo get_field('expertise_description'); ?></p>
     </div>
-    <div class="image"> <img src="https://picsum.photos/2000/2000"></div>
+    <div class="image">
+        <img src="<?php echo get_field('expertise_image')['url']; ?>" alt="expertise image">
+    </div>
 </div>
 
 <div class="center-text">
     <h3>l'Institut</h3>
-    <p>Nous vous accueillons dans nos nouveaux locaux au style cosy et chaleureux. Nous disposons d’un espace onglerie,
-        de 2 cabines d’épilations et de 3 salles de soins. </p>
+    <p> 
+        <?php echo get_field('institut_description'); ?>
+    </p>
 </div>
-<div class="banner-image">
-    <!-- Dynamic version with acf -->
-    <?php foreach (get_field('banner-image') as $i => $banner_image) : ?>
 
-    <img src=" <?php echo $banner_image['image']['url']; ?>">
+<div class="banner-image">
+    <?php foreach (get_field('banner-image') as $i => $banner_image) : ?>
+    <img src="<?php echo $banner_image['image']['url']; ?>" alt="banner image">
     <?php endforeach; ?>
 </div>
 
-
-
-<div class=horaire>
+<div class="horaire">
     <div class="left-text">
         <h3> Nos Horaires</h3>
     </div>
-
     <div class="horaire-container border-solid-top">
-
-
         <div class="horaire-day-container">
-
+            <?php foreach (get_field('opening_hours') as $i => $opening_hour) : ?>
             <div class="horaire-day">
-                <h3 class="bold">Du Lundi au Vendredi </h3>
-                <h3>De 9h à 14h30 </h3>
-
+                <h3 class="bold"><?php echo $opening_hour['day']; ?></h3>
+                <h3><?php echo $opening_hour['hours']; ?></h3>
             </div>
-            <div class=line></div>
-            <div class="horaire-day">
-                <h3 class="bold">Le Samedi </h3>
-                <h3>De 9h à 14h30 </h3>
-            </div>
+            <div class="line"></div>
+            <?php endforeach; ?>
         </div>
-
-        <img src="<?php echo get_template_directory_uri() . '/assets/icone_PNG/icone_calendrier.png' ?>"
+        <img src="<?php echo get_template_directory_uri() . '/assets/icone_PNG/icone_calendrier.png'; ?>"
             alt="icone calendrier" width="100px" height="100px">
-
-
     </div>
     <div class="center-text margin-top-5 border-solid-bottom">
-        <p>Suivez-notre actualité sur notre page <a href="">Instagram</a>
+        <p>Suivez-notre actualité sur notre page <a target="_blank"
+                href="<?php echo get_field('instagram_link'); ?>">Instagram</a></p>
     </div>
-
 </div>
+
 <div class="left-text">
     <h3> Venir</h3>
 </div>
-<img class="center" src="https://picsum.photos/1000/400">
+<img class="center" src="<?php echo get_field('coming_image')['url']; ?>" alt="venu image">
+<div class="center-text">
+    <p><?php echo get_field('coming_description'); ?></p>
+</div>
 
 <div class="left-text">
     <h3> Nous Contacter</h3>
 </div>
 <div class="contact">
     <div class="contact-text">
-        <p>Nous sommes joignables par téléphone à nos horaires d’ouverture. Pour toutes information, n’hésitez pas à
-            nous contacter. </p>
-        <p>La prise de rendez-vous se fait via notre plateforme de réservation en ligne ou par téléphone. </p>.
-        <p>Retrouvez-nous sur nos réseaux sociaux pour suivre l’actualité de l’Institut !</p>
+        <p><?php echo get_field('contact_info'); ?></p>
     </div>
 </div>
 
