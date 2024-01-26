@@ -130,8 +130,6 @@ header {
   align-items: center;
 }
 
-/* Ajoutez ces styles à la fin de votre fichier CSS */
-
 /* Menu burger pour les petits écrans */
 .mobile-menu-icon {
   display: none;
@@ -222,19 +220,6 @@ header {
     gap: 0rem;
     transition: all 0.3s ease-in-out;
   }
-
-  .button-header {
-    background-color: var(--color-pink-1);
-    color: var(--color-white);
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 100px;
-    margin-left: 2rem;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -245,22 +230,6 @@ header {
     width: 100%;
     gap: 0rem;
     transition: all 0.3s ease-in-out;
-  }
-
-  .button-header {
-    background-color: var(--color-pink-1);
-    color: var(--color-white);
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
   }
 
   header .menu {
@@ -276,5 +245,30 @@ header {
 @media screen and (max-width: 375px) {
   header .container {
     display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .mobile-menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    margin: 2rem 0px;
   }
 }

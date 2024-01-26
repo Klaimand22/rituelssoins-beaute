@@ -16,10 +16,6 @@
 .border-radius {
   border-radius: 45px;
 }
-a {
-  text-decoration: none !important;
-  color: var(--color-text-green) !important;
-}
 
 body {
   font-family: "Montserrat", sans-serif;

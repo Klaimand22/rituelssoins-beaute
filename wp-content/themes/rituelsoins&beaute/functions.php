@@ -10,6 +10,7 @@ function add_style()
 {
     wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', false);
     wp_enqueue_script('kalendes', 'https://www.kalendes.com/site/scripts/widget.js', false, '1.0', true);
+    wp_enqueue_script('main-script', get_template_directory_uri() . '/js/header-mobile.js', ['kalendes'], '1.0', true);
     wp_enqueue_script('main-script', get_template_directory_uri() . '/js/kalendes.js', ['kalendes'], '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'add_style');
