@@ -295,7 +295,7 @@
   }
 }
 /*-------------------------------------------------------------- RESPONSIVE  TEL ------------------------------------------------------------------------------------ */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .epilation-card-container .epilation-card-item {
     width: 90%;
     background-color: var(--color-green-1);

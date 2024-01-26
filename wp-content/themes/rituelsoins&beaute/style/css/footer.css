@@ -25,7 +25,11 @@ footer .footer-logo {
   justify-content: center;
   align-items: center;
   background: rgb(205, 214, 200);
-  background: linear-gradient(0deg, rgb(205, 214, 200) 70%, rgba(255, 255, 255, 0) 70%);
+  background: linear-gradient(
+    0deg,
+    rgb(205, 214, 200) 70%,
+    rgba(255, 255, 255, 0) 70%
+  );
 }
 footer .footer-logo img {
   width: 14.5rem;
@@ -201,7 +205,7 @@ footer .footer-mentions .footer-mentions-image img {
     display: none;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   footer {
     display: none;
   }

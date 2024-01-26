@@ -111,7 +111,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .button-header {
     background-color: var(--color-pink-1);
     color: var(--color-white);

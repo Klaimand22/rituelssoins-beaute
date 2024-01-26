@@ -286,7 +286,7 @@
     justify-content: center;
     gap: 30px;
     margin: 10rem 0;
-}
+  }
   .epilation-price .cire-price {
     width: 26.25rem;
     height: auto;
@@ -315,9 +315,8 @@
   }
 }
 
-
 /*-------------------------------------------------------------- RESPONSIVE  TEL ------------------------------------------------------------------------------------ */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .epilation-card-container .epilation-card-item {
     width: 90%;
     background-color: var(--color-green-1);
@@ -339,7 +338,6 @@
     padding: 5rem 0;
   }
   .button {
-
     color: #fff;
     border: none;
     border-radius: 100px;
@@ -362,14 +360,14 @@
     align-items: center;
     justify-content: end;
     padding: 1rem 0;
-}
-.epilation-price .cire-price .epilation-stuff-price-text .colonne {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
+  }
+  .epilation-price .cire-price .epilation-stuff-price-text .colonne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
   .epilation-price {
     width: 100%;
     display: flex;
@@ -379,17 +377,16 @@
     gap: 0px;
     margin: 10rem 0;
   }
-    .epilation-price .cire-price p {
-      color: #293124;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 100;
-      line-height: 20px;
-      /* text-align: center; */
-      /* width: 42%; */
-      /* gap: 1rem; */
-
+  .epilation-price .cire-price p {
+    color: #293124;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 20px;
+    /* text-align: center; */
+    /* width: 42%; */
+    /* gap: 1rem; */
   }
   .epilation-price .cire-price h2 {
     color: #293124;
@@ -409,11 +406,11 @@
 }
 
 .epilation-price .cire-price .epilation-stuff-price-text .colonne {
-    margin: 0 2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-    /* width: 100%; */
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  /* width: 100%; */
 }

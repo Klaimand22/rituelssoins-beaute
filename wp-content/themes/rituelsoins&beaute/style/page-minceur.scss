@@ -239,7 +239,6 @@
   gap: 2rem;
 }
 
-
 /* ------------------------------------------------------------------------REPONSIVE 1024 ------------------------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
   .minceur-info {
@@ -254,7 +253,7 @@
     padding: 2rem 0;
     background-color: var(--color-green-1);
     border-radius: 48px;
-}
+  }
   .minceur-stuff-container .image-background {
     width: 100%;
     height: 100%;
@@ -273,28 +272,28 @@
     width: 100%;
     height: 100%;
     border-radius: 46px;
-}
+  }
 
-.minceur-seance-container .minceur-seance-img {
-  width: 51%;
-  height: 50%;
-  /* border-radius: 46px; */
-  border: 1px solid var(--color-green-1);
-}
+  .minceur-seance-container .minceur-seance-img {
+    width: 51%;
+    height: 50%;
+    /* border-radius: 46px; */
+    border: 1px solid var(--color-green-1);
+  }
 
-.minceur-info {
-  width: 85%;
-  left: 50%;
-  transform: translateX(-50%);
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: center;
-  padding: 2rem 0;
-  background-color: var(--color-green-1);
-  border-radius: 48px;
-}
+  .minceur-info {
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: var(--color-green-1);
+    border-radius: 48px;
+  }
 }
 
 /* -------------------------------------------------------------------REPONSIVE 768 ----------------------------------------------------------------------------*/
@@ -311,35 +310,35 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 8vw;
-}
-.minceur-seance-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 22%;
-  margin-bottom: 5%;
-  gap: 3rem;
-}
-.minceur-info {
-  width: 95%;
-  left: 50%;
-  transform: translateX(-50%);
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: center;
-  padding: 2rem 0;
-  background-color: var(--color-green-1);
-  border-radius: 48px;
-}
+  }
+  .minceur-seance-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22%;
+    margin-bottom: 5%;
+    gap: 3rem;
+  }
+  .minceur-info {
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: var(--color-green-1);
+    border-radius: 48px;
+  }
 }
 
 /* -------------------------------------------------------------------REPONSIVE 375 ----------------------------------------------------------------------------*/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .keyword-container {
     margin: 2rem 0;
     left: 50%;
@@ -351,21 +350,18 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 8vw;
-
-
   }
-.minceur-info {
-  width: 95%;
-  left: 50%;
-  transform: translateX(-50%);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  padding: 2rem 0;
-  background-color: var(--color-green-1);
-  border-radius: 48px;
-}
-
+  .minceur-info {
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: var(--color-green-1);
+    border-radius: 48px;
+  }
 }

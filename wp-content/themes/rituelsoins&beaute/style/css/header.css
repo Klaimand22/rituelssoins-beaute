@@ -223,7 +223,7 @@ header .menu-container {
     position: relative;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   header .container {
     display: none;
   }
