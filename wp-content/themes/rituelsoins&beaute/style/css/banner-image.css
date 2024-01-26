@@ -18,3 +18,40 @@
   object-fit: cover;
   border-radius: 46px;
 }
+
+/* RESPONSIVE  1024px */
+@media screen and (max-width: 1024px) {
+  .banner-image {
+    gap: 2rem;
+  }
+  .banner-image img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* RESPONSIVE  768px */
+
+@media screen and (max-width: 768px) {
+  .banner-image {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .banner-image img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* RESPONSIVE  375px */
+
+@media screen and (max-width: 375px) {
+  .banner-image {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .banner-image img {
+    width: 150px;
+    height: 150px;
+  }
+}

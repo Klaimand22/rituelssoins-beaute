@@ -1,20 +1,23 @@
 @charset "UTF-8";
-/*
-<div class="tarif-container">
-    <div class="tarif">
-        <p>
-            Teinture sourcils
-            14€
-
-            Teinture cils
-            20€
-
-            Teinture sourcils et cils
-            31€
-        </p>
-        <img src="https://picsum.photos/200/300" alt="">
-    </div>
-</div> */
+/**
+ * <div class="tarif-container">
+ *     <div class="tarif">
+ *         <p>
+ *             Teinture sourcils
+ *             14€
+ *
+ *             Teinture cils
+ *             20€
+ *
+ *             Teinture sourcils et cils
+ *             31€
+ *         </p>
+ *         <img src="https://picsum.photos/200/300" alt="">
+ *     </div>
+ * </div>
+ *
+ * @format
+ */
 .tarif-container {
   display: flex;
   flex-direction: row;
@@ -65,6 +68,49 @@
   min-height: 30vh;
   border-radius: 46px;
   object-fit: cover;
+}
+
+/* --------------------------------------------------------------RESPONSIVE 768px-------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .text-padding-green {
+    width: 90vw;
+    background-color: var(--color-green-1);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* --------------------------------------------------------------RESPONSIVE 375px-------------------------------------------------------------- */
+@media screen and (max-width: 375px) {
+  .text-padding-green {
+    width: 90vw;
+    background-color: var(--color-green-1);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .tarif-container .tarif {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    margin: 10rem 0px;
+    gap: 2vw;
+  }
+  .text-padding-green {
+    width: 90vw;
+    background-color: var(--color-green-1);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=page-beaute-du-regard.css.map */
