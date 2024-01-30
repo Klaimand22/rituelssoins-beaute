@@ -56,11 +56,11 @@
     .service-price {
       z-index: 1;
       border: 1px solid var(--color-green-2);
-      padding: 1rem 6rem;
+      padding: 1.5rem 1.5rem;
       border-radius: 46px;
     }
     p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-family: "Montserrat", sans-serif;
       color: var(--color-text-green);
     }
@@ -71,7 +71,7 @@
   left: 50%;
   transform: translateX(-50%);
   position: relative;
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +79,7 @@
   flex-direction: column;
 
   h4 {
-    margin-top: 1rem;
+    margin: 1rem;
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
     color: var(--color-text-green);

@@ -51,7 +51,7 @@
   height: 100%;
   aspect-ratio: 9/16;
   right: 0;
-  transform: translate(calc(100% + 200px), 0);
+  transform: translate(calc(100% + 110px), 0);
   border-radius: 2rem;
 }
 .container-onglerie .container-onglerie-img {
@@ -63,7 +63,6 @@
   align-items: center;
   gap: 2rem;
   border-radius: 46px;
-  border: 1px solid red;
 }
 
 .container-onglerie-description {
@@ -106,6 +105,42 @@ h3.supplement b {
   flex-direction: row;
   justify-content: end;
   align-items: flex-end;
+}
+
+/* ---------------------------------------------------------RESPONSIVE 1024px-------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  .container-onglerie .container-onglerie-text img {
+    transform: translate(calc(100% + 110px), 0);
+  }
+  h3.supplement {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container-onglerie .container-onglerie-text img {
+    transform: translate(0, 43vh);
+  }
+  .container-onglerie-description {
+    background-color: var(--color-green-1);
+    border-radius: 46px;
+    width: 500px;
+    left: 55%;
+    /* top: 1%; */
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+    width: 90%;
+  }
+  .container-onglerie {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 33vh;
+  }
 }
 
 /*# sourceMappingURL=page-onglerie.css.map */

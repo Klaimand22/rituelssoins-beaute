@@ -45,7 +45,7 @@
 }
 .container-description .right .price {
   border: 1px solid var(--color-text-green);
-  width: 73%;
+  width: 100%;
   padding: 10px;
   border-radius: 50px;
   left: 50%;
@@ -96,4 +96,51 @@
 
 .container-odd .right {
   align-items: flex-end;
+}
+
+
+/* -----------------------------------------------------RESPONSIVE 1024------------------------------------------------------ */
+@media screen and (max-width: 1024px) {
+  .container-description {
+    width: 70%;
+  }
+}
+
+/* -----------------------------------------------------RESPONSIVE 768------------------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+  .container-description {
+    width: 86%;
+  }
+}
+
+/* -----------------------------------------------------RESPONSIVE 390------------------------------------------------------ */
+
+@media screen and (max-width: 390px) {
+  .container-even .right .description {
+    border-radius: 46px;
+}
+.container-description .left {
+  height: 132px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.container-description .right .description {
+  width: 100%;
+}
+.container-odd .right .description {
+  border-radius: 46px;
+}
+.container-description .right .price {
+  border: 1px solid var(--color-text-green);
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  left: 50%;
+  transform: translateX(10%);
+}
 }
