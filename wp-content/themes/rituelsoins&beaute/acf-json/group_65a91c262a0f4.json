@@ -169,6 +169,13 @@
                 "operator": "==",
                 "value": "template\/page-mise-en-beaute.php"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template\/page-maquillage.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -187,5 +194,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1705960900
+    "modified": 1707144231
 }
