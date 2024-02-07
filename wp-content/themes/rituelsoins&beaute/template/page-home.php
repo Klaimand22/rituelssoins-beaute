@@ -2,12 +2,15 @@
 get_header();
 ?>
 
+<script>
+AOS.init();
+</script>
 
 <div class="container-background">
     <?php
     $image = get_field('background-logo');
     if (!empty($image)) : ?>
-    <img class="background-logo" src="<?php echo esc_url($image['url']); ?>"
+    <img data-aos="zoom-out" class="background-logo" src="<?php echo esc_url($image['url']); ?>"
         alt="<?php echo esc_attr($image['alt']); ?>" />
     <?php endif;
 
@@ -23,7 +26,7 @@ get_header();
 
 <div class="discover">
     <h2 class="about">A PROPOS</h2>
-    <h1>Rituels Soins et Beauté</h1>
+    <h1 data-aos="zoom-in">Rituels Soins et Beauté</h1>
     <h2>Laura et son équipe vous accueillent pour vous accorder une pause bien-<br>être dans
         leurs nouveaux locaux.
     </h2>
@@ -31,6 +34,7 @@ get_header();
     <a class="button button-green" href="<?php echo get_home_url() . '/a-propos' ?>">Découvrir l’institut</a>
 
 </div>
+
 
 <div class="services">
     <div class="services-container">
@@ -70,7 +74,7 @@ get_header();
     <div class="services-grid-container">
         <?php if (have_rows('service_card')) : ?>
         <?php while (have_rows('service_card')) : the_row(); ?>
-        <div class="services-grid-item">
+        <div class="services-grid-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <?php $image = get_sub_field('image'); ?>
             <div class="services-grid-img" style="background-image: url('<?php echo esc_url($image['url']); ?>')">
                 <?php if (empty($image)) : ?>

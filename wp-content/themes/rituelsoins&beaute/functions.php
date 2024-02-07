@@ -8,6 +8,9 @@ add_theme_support('custom-logo');
 
 function add_styles_and_scripts()
 {
+
+    // Script AOS pour animation de scroll
+    wp_enqueue_style('aos-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), '1.0', 'all');
     // Enregistrement du style principal
     wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
 
@@ -21,6 +24,9 @@ function add_styles_and_scripts()
     wp_enqueue_script('main-kalendes-script', get_template_directory_uri() . '/js/kalendes.js', array('kalendes'), '1.0', true);
 }
 
+
+
+
 // Ajout de l'action pour la fonction
 add_action('wp_enqueue_scripts', 'add_styles_and_scripts');
 
@@ -33,3 +39,18 @@ function custom_register_nav_menu()
     ));
 }
 add_action('after_setup_theme', 'custom_register_nav_menu', 0);
+
+
+function custom_js_import()
+{
+?>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+        AOS.init();
+    </script>
+
+<?php
+}
+add_action('wp_head', 'custom_js_import');
+
+
+add_theme_support('title-tag');
