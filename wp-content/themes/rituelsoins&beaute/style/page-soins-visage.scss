@@ -44,7 +44,7 @@
       border-radius: 46px;
       z-index: 10;
       position: absolute;
-      top: -1.5rem;
+      transform: translateY(-50px);
       right: calc(30% - 5rem);
       p {
         font-size: 1.3rem;

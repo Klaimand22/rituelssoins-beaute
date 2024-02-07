@@ -1,8 +1,8 @@
 <footer>
     <?php wp_footer(); ?>
 
-    <div class="book-online">
-        <a data-aos="zoom-in" class="button button-pink" href="<?php echo get_home_url() . '/reserver-en-ligne' ?>">Reserver en ligne</a>
+    <div data-aos="zoom-in" class="book-online">
+        <a class="button button-pink" href="<?php echo get_home_url() . '/reserver-en-ligne' ?>">Reserver en ligne</a>
     </div>
 
     <div class="footer-logo">
@@ -64,8 +64,6 @@
             <div class="footer-mentions-info">
                 <div class="rgpd">
                     <a href="<?php echo get_home_url() . '/mentions-legales' ?>">Mentions légales</a>
-                    <a href="<?php echo get_home_url() . '/politique-de-confidentialite' ?>">Politique de
-                        confidentialité</a>
                 </div>
             </div>
             <div class="footer-mentions-image">

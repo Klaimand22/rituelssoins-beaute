@@ -1,10 +1,9 @@
 <?php /* Template Name: Idee cadeau */
 get_header();
+
 ?>
-<?php foreach (get_field('title_description') as $i => $title_description) : ?>
-<h1 class="title-page"><?php echo $title_description['title']; ?></h1>
-<h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
-<?php endforeach; ?>
+
+<?php include 'title-subtitle.php'; ?>
 
 <div class="gift-banner">
     <div class="banner">
@@ -38,19 +37,19 @@ get_header();
     $class = ($i % 2 == 0) ? 'container-even' : 'container-odd';
 
 ?>
-<div class="container-description <?php echo $class; ?>">
-    <div class="left">
-        <img class="img-beaute" src="<?php echo $description_container['image']['url']; ?>" alt="" srcset="">
-    </div>
-    <div class="right">
-        <div class="price">
-            <h3 class="text-onglerie"><?php echo $description_container['title']; ?></h3>
+    <div class="container-description <?php echo $class; ?>">
+        <div class="left">
+            <img class="img-beaute" src="<?php echo $description_container['image']['url']; ?>" alt="" srcset="">
         </div>
-        <div class="description">
-            <p><?php echo $description_container['description']; ?></p>
+        <div class="right">
+            <div class="price">
+                <h3 class="text-onglerie"><?php echo $description_container['title']; ?></h3>
+            </div>
+            <div class="description">
+                <p><?php echo $description_container['description']; ?></p>
+            </div>
         </div>
     </div>
-</div>
 <?php endforeach; ?>
 
 

@@ -2,12 +2,11 @@
 get_header();
 
 
+
 ?>
 
-<?php foreach (get_field('title_description') as $i => $title_description) : ?>
-<h1 class="title-page"><?php echo $title_description['title']; ?></h1>
-<h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
-<?php endforeach; ?>
+<?php include 'title-subtitle.php'; ?>
+
 
 <?php foreach (get_field('prices') as $i => $soin) :
 
@@ -15,21 +14,21 @@ get_header();
     $class = ($i % 2 == 0) ? 'spreadsheet-even' : 'spreadsheet-odd';
 
 ?>
-<div class="spreadsheet <?php echo $class; ?>">
-    <div class="details">
-        <h3><?php echo $soin['title']; ?></h3>
-        <p><?php echo $soin['description']; ?></p>
-    </div>
-    <div class="price">
+    <div class="spreadsheet <?php echo $class; ?>">
+        <div class="details">
+            <h3><?php echo $soin['title']; ?></h3>
+            <p><?php echo $soin['description']; ?></p>
+        </div>
+        <div class="price">
 
-        <div class="service-price">
-            <div class="duration <?php echo $class; ?>">
-                <p><?php echo $soin['duration']; ?></p>
+            <div class="service-price">
+                <div class="duration <?php echo $class; ?>">
+                    <p><?php echo $soin['duration']; ?></p>
+                </div>
+                <p><?php echo $soin['price']; ?></p>
             </div>
-            <p><?php echo $soin['price']; ?></p>
         </div>
     </div>
-</div>
 <?php endforeach; ?>
 
 
@@ -43,18 +42,18 @@ get_header();
 
 
 <?php foreach (get_field('card-description') as $i => $card_description) : ?>
-<div class="card-description">
-    <div class="card-description-text">
-        <p><?php echo $card_description['text']; ?></p>
+    <div class="card-description">
+        <div class="card-description-text">
+            <p><?php echo $card_description['text']; ?></p>
+        </div>
+
     </div>
 
-</div>
-
-<?php if ($card_description['image']) : ?>
-<div class="card-description-image">
-    <img src="<?php echo $card_description['image']['url']; ?>">
-</div>
-<?php endif; ?>
+    <?php if ($card_description['image']) : ?>
+        <div class="card-description-image">
+            <img src="<?php echo $card_description['image']['url']; ?>">
+        </div>
+    <?php endif; ?>
 <?php endforeach; ?>
 
 
@@ -62,7 +61,7 @@ get_header();
     <!-- Dynamic version with acf -->
     <?php foreach (get_field('banner-image') as $i => $banner_image) : ?>
 
-    <img src="<?php echo $banner_image['image']['url']; ?>">
+        <img src="<?php echo $banner_image['image']['url']; ?>">
     <?php endforeach; ?>
 </div>
 

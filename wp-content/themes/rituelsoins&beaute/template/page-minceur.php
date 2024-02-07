@@ -1,43 +1,43 @@
 <?php /* Template Name: Minceur */
-get_header(); ?>
+get_header();
 
-<?php foreach (get_field('title_description') as $i => $title_description) : ?>
-<h1 class="title-page"><?php echo $title_description['title']; ?></h1>
-<h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
-<?php endforeach; ?>
+?>
+<?php include 'title-subtitle.php'; ?>
+
+
 <div class="minceur-info">
     <div class="minceur-info-item">
         <?php $image = get_field('minceur-info1-icone');
         if (!empty($image)) : ?>
-        <div class="minceur-info-img">
-            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <div class="minceur-info-img">
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
             <?php endif; ?>
-        </div>
-        <div class="minceur-info-text">
-            <p><?php the_field('minceur-info1-description'); ?></p>
-        </div>
+            </div>
+            <div class="minceur-info-text">
+                <p><?php the_field('minceur-info1-description'); ?></p>
+            </div>
     </div>
     <div class="minceur-info-item">
         <?php $image = get_field('minceur-info2-icone');
         if (!empty($image)) : ?>
-        <div class="minceur-info-img">
-            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <div class="minceur-info-img">
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
             <?php endif; ?>
-        </div>
-        <div class="minceur-info-text">
-            <p><?php the_field('minceur-info2-description'); ?></p>
-        </div>
+            </div>
+            <div class="minceur-info-text">
+                <p><?php the_field('minceur-info2-description'); ?></p>
+            </div>
     </div>
     <div class="minceur-info-item">
         <?php $image = get_field('minceur-info3-icone');
         if (!empty($image)) : ?>
-        <div class="minceur-info-img">
-            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <div class="minceur-info-img">
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
             <?php endif; ?>
-        </div>
-        <div class="minceur-info-text">
-            <p><?php the_field('minceur-info3-description'); ?></p>
-        </div>
+            </div>
+            <div class="minceur-info-text">
+                <p><?php the_field('minceur-info3-description'); ?></p>
+            </div>
     </div>
 
 </div>
@@ -60,13 +60,13 @@ get_header(); ?>
     <div class="image-background">
         <?php $image = get_field('minceur-stuff-img');
         if (!empty($image)) : ?>
-        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
         <?php endif; ?>
     </div>
     <div class="minceur-stuff-price">
         <?php $image = get_field('minceur-stuff-icone');
         if (!empty($image)) : ?>
-        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
         <?php endif; ?>
         <div class="minceur-stuff-price-text">
             <h2><?php the_field('minceur-stuff-title1'); ?></h2>
@@ -98,7 +98,7 @@ get_header(); ?>
     <div class="minceur-seance-img">
         <?php $image = get_field('minceur-seance-img');
         if (!empty($image)) : ?>
-        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
         <?php endif; ?>
     </div>
 </div>

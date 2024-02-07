@@ -1,17 +1,12 @@
 <?php /* Template Name: Onglerie */
 get_header();
 
-
-
-?>
-
+?><?php include 'title-subtitle.php'; ?>
 
 
 
-<?php foreach (get_field('title_description') as $i => $title_description) : ?>
-<h1 class="title-page"><?php echo $title_description['title']; ?></h1>
-<h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
-<?php endforeach; ?>
+
+
 
 <div class="container-onglerie">
     <div class="container-onglerie-left">
@@ -19,7 +14,7 @@ get_header();
             <h3 class="text-onglerie">Vernis Semi-Permanent</h3>
             <ul class="list-onglerie">
                 <?php foreach (get_field('list-onglerie') as $i => $list_onglerie) : ?>
-                <li><?php echo $list_onglerie['text']; ?></li>
+                    <li><?php echo $list_onglerie['text']; ?></li>
                 <?php endforeach; ?>
                 </li>
             </ul>
@@ -54,19 +49,19 @@ foreach (get_field('description_container', get_the_ID()) as $i => $description_
     $class = ($i % 2 == 0) ? 'container-even' : 'container-odd';
 
 ?>
-<div class="container-description <?php echo $class; ?>">
-    <div class="left">
-        <img class="img-beaute" src="<?php echo $description_container['image']['url']; ?>" alt="" srcset="">
-    </div>
-    <div class="right">
-        <div class="price">
-            <h3 class="text-onglerie"><?php echo $description_container['title']; ?></h3>
+    <div class="container-description <?php echo $class; ?>">
+        <div class="left">
+            <img class="img-beaute" src="<?php echo $description_container['image']['url']; ?>" alt="" srcset="">
         </div>
-        <div class="description">
-            <p><?php echo $description_container['description']; ?></p>
+        <div class="right">
+            <div class="price">
+                <h3 class="text-onglerie"><?php echo $description_container['title']; ?></h3>
+            </div>
+            <div class="description">
+                <p><?php echo $description_container['description']; ?></p>
+            </div>
         </div>
     </div>
-</div>
 <?php endforeach; ?>
 
 <h3 class="supplement">

@@ -25,11 +25,7 @@ footer .footer-logo {
   justify-content: center;
   align-items: center;
   background: rgb(205, 214, 200);
-  background: linear-gradient(
-    0deg,
-    rgb(205, 214, 200) 70%,
-    rgba(255, 255, 255, 0) 70%
-  );
+  background: linear-gradient(0deg, rgb(205, 214, 200) 70%, rgba(255, 255, 255, 0) 70%);
 }
 footer .footer-logo img {
   width: 14.5rem;
@@ -124,6 +120,15 @@ footer .footer-contact .footer-contact-info p {
   margin: 0.5rem 0;
   line-height: 1.2rem;
   min-width: 100%;
+}
+footer .footer-contact .footer-contact-info a {
+  text-decoration: none;
+  color: var(--color-text-green);
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+}
+footer .footer-contact .footer-contact-info a:hover {
+  color: #daa7a1;
 }
 footer .footer-mentions {
   width: 80%;

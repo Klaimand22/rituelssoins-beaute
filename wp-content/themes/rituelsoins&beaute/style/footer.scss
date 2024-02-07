@@ -138,6 +138,16 @@ footer {
         line-height: 1.2rem;
         min-width: 100%;
       }
+
+      a {
+        text-decoration: none;
+        color: var(--color-text-green);
+        font-size: 0.75rem;
+        font-family: "Montserrat", sans-serif;
+        &:hover {
+          color: #daa7a1;
+        }
+      }
     }
   }
 

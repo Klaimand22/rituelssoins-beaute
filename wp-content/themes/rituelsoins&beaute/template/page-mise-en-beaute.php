@@ -1,11 +1,10 @@
 <?php /* Template Name: Mise en beaute */
 get_header();
-?>
 
-<?php foreach (get_field('title_description') as $i => $title_description) : ?>
-    <h1 class="title-page"><?php echo $title_description['title']; ?></h1>
-    <h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
-<?php endforeach; ?>
+?>
+<?php include 'title-subtitle.php'; ?>
+
+
 
 <div class="center">
 

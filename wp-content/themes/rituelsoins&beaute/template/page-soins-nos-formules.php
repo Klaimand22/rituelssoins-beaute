@@ -3,11 +3,9 @@ get_header();
 
 
 ?>
+<?php include 'title-subtitle.php'; ?>
 
-<?php foreach (get_field('title_description') as $i => $title_description) : ?>
-    <h1 class="title-page"><?php echo $title_description['title']; ?></h1>
-    <h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
-<?php endforeach; ?>
+
 
 
 <?php foreach (get_field('prices') as $i => $soin) :
@@ -16,19 +14,22 @@ get_header();
     $class = ($i % 2 == 0) ? 'spreadsheet-even' : 'spreadsheet-odd';
 
 ?>
-    <div class="spreadsheet <?php echo $class; ?>">
+    <div class="spreadsheet">
         <div class="details">
             <h3><?php echo $soin['title']; ?></h3>
             <p><?php echo $soin['description']; ?></p>
         </div>
         <div class="price">
-
-            <div class="service-price">
-                <div class="duration">
-                    <p><?php echo $soin['duration']; ?></p>
+            <?php if (!empty($soin['duration']) || !empty($soin['price'])) : ?>
+                <div class="service-price">
+                    <div class="duration <?php if ($soin['duration'] == '') : echo 'hidden';
+                                            else : echo $class;
+                                            endif; ?>">
+                        <p><?php echo $soin['duration']; ?></p>
+                    </div>
+                    <p><?php echo $soin['price']; ?></p>
                 </div>
-                <p><?php echo $soin['price']; ?></p>
-            </div>
+            <?php endif; ?>
         </div>
     </div>
 <?php endforeach; ?>

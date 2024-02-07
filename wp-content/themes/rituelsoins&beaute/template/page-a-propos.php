@@ -2,11 +2,8 @@
 /* Template Name: A Propos */
 get_header();
 ?>
+<?php include 'title-subtitle.php'; ?>
 
-<?php foreach (get_field('title_description') as $i => $title_description) : ?>
-<h1 class="title-page"><?php echo $title_description['title']; ?></h1>
-<h2 class="subtitle-page"><?php echo $title_description['description']; ?></h2>
-<?php endforeach; ?>
 
 <div class="team-description">
     <div class="text">
@@ -26,13 +23,13 @@ get_header();
     if ($team_members) :
         foreach ($team_members as $i => $team_member) :
     ?>
-    <div class="team-member">
-        <div class="image" style="background-image: url('<?php echo $team_member['image']['url']; ?>')">
-        </div>
-        <div class="text">
-            <h3><?php echo $team_member['name']; ?></h3>
-        </div>
-    </div>
+            <div class="team-member">
+                <div class="image" style="background-image: url('<?php echo $team_member['image']['url']; ?>')">
+                </div>
+                <div class="text">
+                    <h3><?php echo $team_member['name']; ?></h3>
+                </div>
+            </div>
     <?php
         endforeach;
     endif;
@@ -75,7 +72,7 @@ get_header();
 
 <div class="banner-image">
     <?php foreach (get_field('banner-image') as $i => $banner_image) : ?>
-    <img src="<?php echo $banner_image['image']['url']; ?>" alt="banner image">
+        <img src="<?php echo $banner_image['image']['url']; ?>" alt="banner image">
     <?php endforeach; ?>
 </div>
 
@@ -86,19 +83,17 @@ get_header();
     <div class="horaire-container border-solid-top">
         <div class="horaire-day-container">
             <?php foreach (get_field('opening_hours') as $i => $opening_hour) : ?>
-            <div class="horaire-day">
-                <h3 class="bold"><?php echo $opening_hour['day']; ?></h3>
-                <h3><?php echo $opening_hour['hours']; ?></h3>
-            </div>
-            <div class="line"></div>
+                <div class="horaire-day">
+                    <h3 class="bold"><?php echo $opening_hour['day']; ?></h3>
+                    <h3><?php echo $opening_hour['hours']; ?></h3>
+                </div>
+                <div class="line"></div>
             <?php endforeach; ?>
         </div>
-        <img src="<?php echo get_template_directory_uri() . '/assets/icone_PNG/icone_calendrier.png'; ?>"
-            alt="icone calendrier" width="100px" height="100px">
+        <img src="<?php echo get_template_directory_uri() . '/assets/icone_PNG/icone_calendrier.png'; ?>" alt="icone calendrier" width="100px" height="100px">
     </div>
     <div class="center-text margin-top-5 border-solid-bottom">
-        <p>Suivez-notre actualité sur notre page <a target="_blank"
-                href="<?php echo get_field('instagram_link'); ?>">Instagram</a></p>
+        <p>Suivez-notre actualité sur notre page <a target="_blank" href="<?php echo get_field('instagram_link'); ?>">Instagram</a></p>
     </div>
 </div>
 

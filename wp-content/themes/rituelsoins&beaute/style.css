@@ -24,6 +24,7 @@
 @import "./style/css/page-a-propos.css";
 @import "./style/css/page-soins.css";
 @import "./style/css/page-maquillage.css";
+@import "./style/css/mention-legale.css";
 
 @media screen and (max-width: 1024px) {
   body {

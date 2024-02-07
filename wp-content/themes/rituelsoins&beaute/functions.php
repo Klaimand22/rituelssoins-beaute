@@ -54,3 +54,20 @@ add_action('wp_head', 'custom_js_import');
 
 
 add_theme_support('title-tag');
+
+
+
+// Change le logo sur wp-login.php //
+function logo_personnalise()
+{
+    echo '<style type="text/css">
+    .login h1 a {
+    background-image:url(/wp-content/uploads/logo-rsb.png) !important;
+    background-size: 300px 100px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    }
+    </style>';
+}
+add_action('login_head', 'logo_personnalise');
