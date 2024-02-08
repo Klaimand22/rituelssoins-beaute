@@ -26,20 +26,3 @@
 @import "./style/css/page-maquillage.css";
 @import "./style/css/mention-legale.css";
 
-@media screen and (max-width: 1024px) {
-  body {
-    background-color: tomato !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    background-color: limegreen !important;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  body {
-    background-color: dodgerblue !important;
-  }
-}
