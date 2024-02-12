@@ -50,7 +50,7 @@ footer .footer-container nav {
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
   padding: 1rem 0;
-  width: 90%;
+  width: 80%;
 }
 footer .footer-container nav ul {
   display: flex;
@@ -58,6 +58,7 @@ footer .footer-container nav ul {
   align-items: center;
   list-style: none;
   gap: 1rem;
+  width: 90%;
 }
 footer .footer-container nav ul li {
   margin-left: 2rem;
@@ -213,7 +214,7 @@ footer .footer-mentions .footer-mentions-image img {
     width: 80%;
   }
   footer .footer-container nav ul {
-    width: auto;
+    width: 100%;
     gap: 1rem;
   }
   footer .footer-contact {
